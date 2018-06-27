@@ -43,10 +43,19 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   },
   "publishConfig": {
     "access": "public"
+  },
+  "release": {
+    "analyzeCommits": {
+      "preset": "angular",
+      "releaseRules": [
+        {"type": "build", "scope":"deps", "release": "minor"},
+        {"type": "build", "scope":"devDeps", "release": "patch"}
+      ]
+    }
   }
 }
