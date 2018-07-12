@@ -42,7 +42,7 @@
     "lint": "standard",
     "test": "nyc mocha && standard",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "semantic-release": "semantic-release" && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "config": {
     "commitizen": {
@@ -51,13 +51,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "release": {
-    "analyzeCommits": {
-      "preset": "angular",
-      "releaseRules": [
-        {"type": "build", "scope":"deps", "release": "minor"}
-      ]
-    }
   }
 }
