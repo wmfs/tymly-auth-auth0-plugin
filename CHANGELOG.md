@@ -1,3 +1,11 @@
+# [1.6.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.5.0...v1.6.0) (2018-09-11)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 4.0.0 to 4.0.1 ([ec98b92](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ec98b92))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([8ce5303](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8ce5303))
+
 # [1.5.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.4.0...v1.5.0) (2018-09-11)
 
 
