@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.2.0...v1.3.0) (2018-09-11)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 3.2.1 to 3.2.2 ([18d2db1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/18d2db1))
+
 # [1.2.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.1.0...v1.2.0) (2018-09-11)
 
 
