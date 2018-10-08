@@ -1,3 +1,28 @@
+# [1.7.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.6.0...v1.7.0) (2018-10-08)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 4.0.1 to 4.1.0 ([1cb7492](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1cb7492))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.26.1 to 1.27.0 ([5eac6f6](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/5eac6f6))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.27.0 to 1.28.0 ([1bc76b0](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1bc76b0))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.28.0 to 1.30.0 ([f2109cc](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f2109cc))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.30.0 to 1.31.0 ([23e3370](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/23e3370))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.31.0 to 1.32.0 ([5c31670](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/5c31670))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.32.0 to 1.33.0 ([f74612c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f74612c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.33.0 to 1.34.0 ([fcd3259](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/fcd3259))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.34.0 to 1.35.0 ([65dadd5](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/65dadd5))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.35.0 to 1.36.0 ([3b24b82](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3b24b82))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.36.0 to 1.37.0 ([f39c798](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f39c798))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.37.0 to 1.39.0 ([405865b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/405865b))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.39.0 to 1.40.0 ([bbe8f0a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/bbe8f0a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.40.0 to 1.41.0 ([b2a4e6d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b2a4e6d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.41.0 to 1.42.0 ([e5e048a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e5e048a))
+* **deps-dev:** update chai requirement from 4.1.2 to 4.2.0 ([1ec2709](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1ec2709))
+* **deps-dev:** update semantic-release requirement ([b6e7a4d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b6e7a4d))
+* **deps-dev:** update semantic-release requirement ([c1c352a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c1c352a))
+* **deps-dev:** update semantic-release requirement ([acb151b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/acb151b))
+
 # [1.6.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.5.0...v1.6.0) (2018-09-11)
 
 
