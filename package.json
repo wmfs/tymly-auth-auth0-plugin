@@ -28,7 +28,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "3.0.1",
     "@semantic-release/git": "7.0.5",
-    "@wmfs/tymly": "1.47.0",
+    "@wmfs/tymly": "1.56.0",
     "@wmfs/tymly-test-helpers": "1.1.4",
     "chai": "4.2.0",
     "codecov": "3.1.0",
