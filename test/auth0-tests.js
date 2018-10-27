@@ -55,6 +55,10 @@ describe('tymly-auth-auth0-plugin tests', function () {
 
       const cachedEmail = userInfoService.emailFromUserIdCache(userId)
       expect(cachedEmail).to.equal(email)
+
+      userInfoService.cacheService.reset('emailFromUserId')
+      userInfoService.cacheService.reset('userIdFromEmail')
+      userInfoService.cacheService.reset('emailFromUserId')
     })
 
     it('fail on a non existent user id ', async () => {
@@ -74,6 +78,10 @@ describe('tymly-auth-auth0-plugin tests', function () {
 
       const cachedUserId = userInfoService.userIdFromEmailCache(email)
       expect(cachedUserId).to.eql(userId)
+
+      userInfoService.cacheService.reset('emailFromUserId')
+      userInfoService.cacheService.reset('userIdFromEmail')
+      userInfoService.cacheService.reset('emailFromUserId')
     })
 
     it('fail on non-existent email address', async () => {
@@ -89,6 +97,10 @@ describe('tymly-auth-auth0-plugin tests', function () {
     it('should get user groups via user ID (should return empty array due to no groups)', async () => {
       const groups = await userInfoService.groupsFromUserId('auth0|5a157ade1932044615a1c502')
       expect(groups).to.eql([])
+
+      userInfoService.cacheService.reset('emailFromUserId')
+      userInfoService.cacheService.reset('userIdFromEmail')
+      userInfoService.cacheService.reset('emailFromUserId')
     })
   })
 
