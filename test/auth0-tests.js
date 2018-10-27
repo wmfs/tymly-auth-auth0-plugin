@@ -49,8 +49,12 @@ describe('tymly-auth-auth0-plugin tests', function () {
 
   describe('userId to email', () => {
     it('convert a user id into an email address', async () => {
-      const email = await userInfoService.emailFromUserId('auth0|5a157ade1932044615a1c502')
+      const userId = 'auth0|5a157ade1932044615a1c502'
+      const email = await userInfoService.emailFromUserId(userId)
       expect(email).to.eql('tymly@xyz.com')
+
+      const cachedEmail = userInfoService.userIdToEmailCache(userId)
+      expect(cachedEmail).to.equal(email)
     })
 
     it('fail on a non existent user id ', async () => {
@@ -64,8 +68,12 @@ describe('tymly-auth-auth0-plugin tests', function () {
 
   describe('email to userId', () => {
     it('convert an email address into a user id', async () => {
-      const userId = await userInfoService.userIdFromEmail('tymly@xyz.com')
+      const email = 'tymly@xyz.com'
+      const userId = await userInfoService.userIdFromEmail(email)
       expect(userId).to.eql('auth0|5a157ade1932044615a1c502')
+
+      const cachedUserId = userInfoService.emailToUserIdCache(email)
+      expect(cachedUserId).to.eql(userId)
     })
 
     it('fail on non-existent email address', async () => {
