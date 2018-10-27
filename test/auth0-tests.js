@@ -65,7 +65,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
       try {
         await userInfoService.emailFromUserId('auth0|ffffffffffffffffffffffff')
       } catch (err) {
-        expect(err.statusCode).to.equal(404)
+        expect(err.output.statusCode).to.equal(404)
       }
     })
   })
