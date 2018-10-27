@@ -53,7 +53,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
       const email = await userInfoService.emailFromUserId(userId)
       expect(email).to.eql('tymly@xyz.com')
 
-      const cachedEmail = userInfoService.userIdToEmailCache(userId)
+      const cachedEmail = userInfoService.emailFromUserIdCache(userId)
       expect(cachedEmail).to.equal(email)
     })
 
@@ -72,7 +72,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
       const userId = await userInfoService.userIdFromEmail(email)
       expect(userId).to.eql('auth0|5a157ade1932044615a1c502')
 
-      const cachedUserId = userInfoService.emailToUserIdCache(email)
+      const cachedUserId = userInfoService.userIdFromEmailCache(email)
       expect(cachedUserId).to.eql(userId)
     })
 
