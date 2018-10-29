@@ -1,3 +1,46 @@
+## [1.7.1](https://github.com/wmfs/tymly-auth-auth0-plugin.git/compare/v1.7.0...v1.7.1) (2018-10-29)
+
+
+### 🐛 Bug Fixes
+
+* **userIdFromEmail failed if there were multiple identities. Fix by just picking first one:** But sh ([a864c05](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/a864c05))
+* In emailToUserId find the most appropriate user info ([da3b132](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/da3b132))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([76e4256](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/76e4256))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([226cf2c](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/226cf2c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.42.0 to 1.43.0 ([53deea4](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/53deea4))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.43.0 to 1.44.0 ([fbfec56](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/fbfec56))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.44.0 to 1.45.0 ([bbb48a9](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/bbb48a9))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.45.0 to 1.46.0 ([a088145](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/a088145))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.46.0 to 1.47.0 ([65c21e4](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/65c21e4))
+* **deps-dev:** update nyc requirement from 13.0.1 to 13.1.0 ([940b6e9](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/940b6e9))
+* **deps-dev:** update semantic-release requirement ([9ee5223](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/9ee5223))
+* **deps-dev:** update semantic-release requirement ([fd83555](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/fd83555))
+* **deps-dev:** update semantic-release requirement ([5dc439d](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/5dc439d))
+* **deps-dev:** update semantic-release requirement ([1c8058a](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/1c8058a))
+* **dev-deps:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.47.0 to 1.56.0 ([94518a1](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/94518a1))
+
+
+### 📦 Code Refactoring
+
+* Flipped cache names to they match the methods they're caching results of ([e3c2202](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/e3c2202))
+* Move userIdFromEmail to use _get ([d961c37](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/d961c37))
+* Pulled out _buildRequest method, constructing the request object to send to Auth0 ([91f698c](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/91f698c))
+* Pulled out a load of common endpoint request stuff. ([d040ad8](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/d040ad8))
+* wrap cache gets in little methods ([14d5f61](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/14d5f61))
+
+
+### 🚨 Tests
+
+* **dev-deps:** Add test-helper so we can pull in always-say-yes rbac dummy ([34e1273](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/34e1273))
+* Explanatory comment ([bcfcbae](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/bcfcbae))
+* extend tests to peek into cache ([c928134](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/c928134))
+* Flung in some describes ([8d6e08d](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/8d6e08d))
+* Poke around inside userInfoService to force a cache reset, so all the tests hit the Auth0 endp ([7265b13](https://github.com/wmfs/tymly-auth-auth0-plugin.git/commit/7265b13))
+
 # [1.7.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.6.0...v1.7.0) (2018-10-08)
 
 
