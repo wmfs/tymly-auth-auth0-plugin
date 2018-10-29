@@ -71,6 +71,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
   })
 
   describe('email to userId', () => {
+    // if this test fails, ensure TYMLY_NIC_AUTH0_CONNECTION is set to WMFS
     it('convert an email address into a user id', async () => {
       const email = 'tymly@xyz.com'
       const userId = await userInfoService.userIdFromEmail(email)
