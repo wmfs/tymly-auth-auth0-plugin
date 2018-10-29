@@ -48,6 +48,12 @@ describe('tymly-auth-auth0-plugin tests', function () {
     )
   })
 
+  beforeEach('flush caches', () => {
+    userInfoService.cacheService.reset('emailFromUserId')
+    userInfoService.cacheService.reset('userIdFromEmail')
+    userInfoService.cacheService.reset('groupsFromUserId')
+  })
+
   describe('userId to email', () => {
     it('convert a user id into an email address', async () => {
       const userId = 'auth0|5a157ade1932044615a1c502'
@@ -56,10 +62,6 @@ describe('tymly-auth-auth0-plugin tests', function () {
 
       const cachedEmail = userInfoService.emailFromUserIdCache(userId)
       expect(cachedEmail).to.equal(email)
-
-      userInfoService.cacheService.reset('emailFromUserId')
-      userInfoService.cacheService.reset('userIdFromEmail')
-      userInfoService.cacheService.reset('emailFromUserId')
     })
 
     it('fail on a non existent user id ', async () => {
@@ -80,10 +82,6 @@ describe('tymly-auth-auth0-plugin tests', function () {
 
       const cachedUserId = userInfoService.userIdFromEmailCache(email)
       expect(cachedUserId).to.eql(userId)
-
-      userInfoService.cacheService.reset('emailFromUserId')
-      userInfoService.cacheService.reset('userIdFromEmail')
-      userInfoService.cacheService.reset('emailFromUserId')
     })
 
     it('fail on non-existent email address', async () => {
@@ -99,19 +97,11 @@ describe('tymly-auth-auth0-plugin tests', function () {
     it('id with groups', async () => {
       const groups = await userInfoService.groupsFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
       expect(groups.length).to.not.eql(0)
-
-      userInfoService.cacheService.reset('emailFromUserId')
-      userInfoService.cacheService.reset('userIdFromEmail')
-      userInfoService.cacheService.reset('emailFromUserId')
     })
 
     it('id with no groups', async () => {
       const groups = await userInfoService.groupsFromUserId('auth0|5a157ade1932044615a1c502')
       expect(groups).to.eql([])
-
-      userInfoService.cacheService.reset('emailFromUserId')
-      userInfoService.cacheService.reset('userIdFromEmail')
-      userInfoService.cacheService.reset('emailFromUserId')
     })
   })
 
