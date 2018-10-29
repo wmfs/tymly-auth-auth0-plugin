@@ -5,6 +5,7 @@
 const expect = require('chai').expect
 const tymly = require('@wmfs/tymly')
 const path = require('path')
+const moment = require('moment')
 
 // these tests actually hit the Auth0 end point, which doesn't
 // hit the accepted definition of 'unit test', but
@@ -111,6 +112,27 @@ describe('tymly-auth-auth0-plugin tests', function () {
       userInfoService.cacheService.reset('emailFromUserId')
       userInfoService.cacheService.reset('userIdFromEmail')
       userInfoService.cacheService.reset('emailFromUserId')
+    })
+  })
+
+  describe('bearer token', () => {
+    it('ensure reauth when token expires', async () => {
+      const token = userInfoService.accessToken
+      userInfoService.timestampService.timeProvider = {
+        now () {
+          return moment([2999, 2, 28, 22, 35, 0]).local()
+        }
+      } // debug provider
+
+      await userInfoService.emailFromUserId('auth0|5a157ade1932044615a1c502')
+      const newToken = userInfoService.accessToken
+
+      expect(newToken).to.not.eql(token)
+
+      // fetch again - no reauth this time as result of emailFromUserId is cached
+      await userInfoService.emailFromUserId('auth0|5a157ade1932044615a1c502')
+      const newNewToken = userInfoService.accessToken
+      expect(newNewToken).to.equal(newToken)
     })
   })
 

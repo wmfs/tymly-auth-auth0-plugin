@@ -35,6 +35,7 @@
     "conventional-changelog-metahub": "2.0.2",
     "cz-conventional-changelog": "2.1.0",
     "mocha": "5.2.0",
+    "moment": "2.22.2",
     "nyc": "13.1.0",
     "semantic-release": "15.10.6",
     "standard": "12.0.1"
