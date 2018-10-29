@@ -74,7 +74,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
     it('convert an email address into a user id', async () => {
       const email = 'tymly@xyz.com'
       const userId = await userInfoService.userIdFromEmail(email)
-      expect(userId).to.eql('auth0|5a157ade1932044615a1c502')
+      expect(userId).to.eql('ad|WMFS|5a157ade1932044615a1c502')
 
       const cachedUserId = userInfoService.userIdFromEmailCache(email)
       expect(cachedUserId).to.eql(userId)
