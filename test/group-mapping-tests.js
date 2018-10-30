@@ -1,6 +1,5 @@
 /* eslint-env mocha */
 
-
 const expect = require('chai').expect
 const tymly = require('@wmfs/tymly')
 const path = require('path')
@@ -122,15 +121,18 @@ describe('group mapping tests', () => {
 
   describe('mapping Auth0 groups to RBAC groups', () => {
     it('no mapping provided', () => {
-      const rbacGroups = auth0GroupMappingService.translateGroups(userData.groups)
-      expect(rbacGroups).to.eql([])
+      const rbacRoles = auth0GroupMappingService.groupsToRoles(userData.groups)
+      expect(rbacRoles).to.eql([])
     })
 
     it('add a mapping', async () => {
       await auth0GroupMappingService.addAuth0Mapping('_ICT Team Leaders', 'testTymly_TeamLeader')
 
-      const rbacGroups = auth0GroupMappingService.translateGroups(userData.groups)
-      expect(rbacGroups).to.eql(['testTymly_TeamLeader'])
+      const rbacRoles = auth0GroupMappingService.groupsToRoles(userData.groups)
+      expect(rbacRoles).to.eql(['testTymly_TeamLeader'])
+
+      const mappings = await storageService.models.auth0_groupMapping.find({})
+      expect(mappings.length).to.eql(1)
     })
   })
 

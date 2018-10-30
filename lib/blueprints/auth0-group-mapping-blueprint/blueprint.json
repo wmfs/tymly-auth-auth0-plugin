@@ -1,0 +1,13 @@
+{
+  "namespace": "auth0",
+  "name": "group-mapping",
+  "version": "1.0",
+
+  "label": "Auth0 Groups Blueprint",
+  "author": "Jez Higgins",
+
+  "organisation": "WMFS",
+  "description": "Blueprint describing tables used for mapping Auth0 groups to RBAC roles",
+
+  "categories": ["tymly", "rbac", "auth0"]
+}
