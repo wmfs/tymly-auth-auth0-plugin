@@ -93,18 +93,6 @@ describe('tymly-auth-auth0-plugin tests', function () {
     })
   })
 
-  describe('user groups', () => {
-    it('id with groups', async () => {
-      const groups = await userInfoService.groupsFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
-      expect(groups.length).to.not.eql(0)
-    })
-
-    it('id with no groups', async () => {
-      const groups = await userInfoService.groupsFromUserId('auth0|5a157ade1932044615a1c502')
-      expect(groups).to.eql([])
-    })
-  })
-
   describe('bearer token', () => {
     it('ensure reauth when token expires', async () => {
       const token = userInfoService.accessToken
