@@ -84,6 +84,7 @@ describe('group mapping tests', () => {
   let tymlyService
   let userInfoService
   let auth0GroupMappingService
+  let storageService
 
   const envVars = [
     'TYMLY_NIC_AUTH0_CLIENT_ID',
@@ -113,6 +114,7 @@ describe('group mapping tests', () => {
         tymlyService = tymlyServices.tymly
         userInfoService = tymlyServices.userInfo
         auth0GroupMappingService = tymlyServices.auth0GroupMapping
+        storageService = tymlyServices.storage
         done()
       }
     )
@@ -124,8 +126,8 @@ describe('group mapping tests', () => {
       expect(rbacGroups).to.eql([])
     })
 
-    it('add a couple of groups', () => {
-      auth0GroupMappingService.addAuth0Mapping('_ICT Team Leaders', 'testTymly_TeamLeader')
+    it('add a mapping', async () => {
+      await auth0GroupMappingService.addAuth0Mapping('_ICT Team Leaders', 'testTymly_TeamLeader')
 
       const rbacGroups = auth0GroupMappingService.translateGroups(userData.groups)
       expect(rbacGroups).to.eql(['testTymly_TeamLeader'])
