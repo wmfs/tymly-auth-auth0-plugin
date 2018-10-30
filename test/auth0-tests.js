@@ -34,7 +34,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
       {
         pluginPaths: [
           path.resolve(__dirname, './../lib'),
-          require.resolve('@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          require.resolve('@wmfs/tymly-rbac-plugin')
         ],
         blueprintPaths: [],
         config: {}

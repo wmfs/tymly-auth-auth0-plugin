@@ -88,6 +88,7 @@ describe('group mapping tests', () => {
   let userInfoService
   let auth0GroupMappingService
   let storageService
+  let rbacService
 
   const envVars = [
     'TYMLY_NIC_AUTH0_CLIENT_ID',
@@ -107,7 +108,7 @@ describe('group mapping tests', () => {
       {
         pluginPaths: [
           path.resolve(__dirname, './../lib'),
-          require.resolve('@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          require.resolve('@wmfs/tymly-rbac-plugin')
         ],
         blueprintPaths: [],
         config: {}
@@ -118,6 +119,7 @@ describe('group mapping tests', () => {
         userInfoService = tymlyServices.userInfo
         auth0GroupMappingService = tymlyServices.auth0GroupMapping
         storageService = tymlyServices.storage
+        rbacService = tymlyServices.rbac
         done()
       }
     )
@@ -147,8 +149,14 @@ describe('group mapping tests', () => {
     })
 
     it('id with groups', async () => {
-      const groups = await userInfoService.rolesFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
-      expect(groups).to.eql(['testTymly_TeamLeader'])
+      const initialRbacRoles = await rbacService.listUserRoles('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
+      expect(initialRbacRoles).to.eql(['$everyone'])
+
+      const roles = await userInfoService.rolesFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
+      expect(roles).to.eql(['testTymly_TeamLeader'])
+
+      const rbacRoles = await rbacService.listUserRoles('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
+      expect(rbacRoles).to.have.members(['testTymly_TeamLeader', '$everyone'])
     })
   })
 
