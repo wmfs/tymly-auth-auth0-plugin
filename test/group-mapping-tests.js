@@ -142,12 +142,12 @@ describe('group mapping tests', () => {
 
   describe('pull user info from Auth0, check mapping', () => {
     it('id with no groups', async () => {
-      const groups = await userInfoService.groupsFromUserId('auth0|5a157ade1932044615a1c502')
+      const groups = await userInfoService.rolesFromUserId('auth0|5a157ade1932044615a1c502')
       expect(groups).to.eql([])
     })
 
     it('id with groups', async () => {
-      const groups = await userInfoService.groupsFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
+      const groups = await userInfoService.rolesFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
       expect(groups).to.eql(['testTymly_TeamLeader'])
     })
   })

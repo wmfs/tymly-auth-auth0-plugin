@@ -51,7 +51,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
   beforeEach('flush caches', () => {
     userInfoService.cacheService.reset('emailFromUserId')
     userInfoService.cacheService.reset('userIdFromEmail')
-    userInfoService.cacheService.reset('groupsFromUserId')
+    userInfoService.cacheService.reset('rolesFromUserId')
   })
 
   describe('userId to email', () => {
