@@ -1,8 +1,12 @@
 /* eslint-env mocha */
 
-const expect = require('chai').expect
+const chai = require('chai')
+chai.use(require('dirty-chai'))
+const expect = chai.expect
+
 const tymly = require('@wmfs/tymly')
 const path = require('path')
+const Auth0GroupMapping = require('../lib/components/services/auth0-group-mapping').serviceClass
 
 const userData = {
   name: 'Jim Heednam',
@@ -145,6 +149,24 @@ describe('group mapping tests', () => {
     it('id with groups', async () => {
       const groups = await userInfoService.groupsFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
       expect(groups).to.eql(['testTymly_TeamLeader'])
+    })
+  })
+
+  describe('load existing mappings on boot', () => {
+    it('boot up the service, poke internal state', async () => {
+      const g2r = new Auth0GroupMapping()
+      await new Promise(resolve =>
+        g2r.boot(
+          {
+            bootedServices: {
+              storage: storageService
+            }
+          },
+          resolve
+        )
+      )
+
+      expect(g2r.mappings.has('_ICT Team Leaders')).to.be.true()
     })
   })
 
