@@ -149,12 +149,15 @@ describe('group mapping tests', () => {
     })
 
     it('id with groups', async () => {
+      rbacService.userInfo = null
       const initialRbacRoles = await rbacService.listUserRoles('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
       expect(initialRbacRoles).to.eql(['$everyone'])
 
       const roles = await userInfoService.rolesFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
       expect(roles).to.eql(['testTymly_TeamLeader'])
 
+      rbacService.userInfo = userInfoService
+      rbacService.resetCache()
       const rbacRoles = await rbacService.listUserRoles('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
       expect(rbacRoles).to.have.members(['testTymly_TeamLeader', '$everyone'])
     })
