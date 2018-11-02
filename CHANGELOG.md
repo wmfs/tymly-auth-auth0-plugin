@@ -1,3 +1,39 @@
+# [1.8.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.7.1...v1.8.0) (2018-11-02)
+
+
+### ✨ Features
+
+* Don't push roles into Rbac service, let Rbac service pull them ([cd517f0](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cd517f0))
+* Ensure Auth0GroupMapping loads existing mappings at boot time ([1e04fbc](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1e04fbc))
+* Hook group to role mapping into user-info service ([cd30a56](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cd30a56))
+* Minimal Auth0GroupMapping service ([aa45997](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/aa45997))
+* Store mappings in a table ([0b9c751](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0b9c751))
+* When we first grab a user's info, we update the Rbac index with their mapped roles. ([508f8dc](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/508f8dc))
+
+
+### 🐛 Bug Fixes
+
+* Keep hold of the bearer token until its expired ([eafe010](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/eafe010))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([bff4f5b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/bff4f5b))
+
+
+### 📦 Code Refactoring
+
+* emailFromUserId and groupsFromUserId are essentially the same, so bring them together ([ff81ba5](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ff81ba5))
+* s/groupsFromUserId/rolesFromUserId/g ([8c005de](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8c005de))
+
+
+### 🚨 Tests
+
+* Bearer token tests - making sure we do reauth when it's expired ([b3fef4d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b3fef4d))
+* Clear caches before each test, not as part of the test ([548dfcd](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/548dfcd))
+* Starting on Auth0GroupMapping ([39fa1f8](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/39fa1f8))
+* Test an id that does have groups ([9b810e1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/9b810e1))
+
 ## [1.7.1](https://github.com/wmfs/tymly-auth-auth0-plugin.git/compare/v1.7.0...v1.7.1) (2018-10-29)
 
 
