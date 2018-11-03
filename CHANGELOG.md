@@ -1,3 +1,14 @@
+# [1.9.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.8.0...v1.9.0) (2018-11-03)
+
+
+### 🛠 Builds
+
+* **deps:** update boom requirement from 7.2.0 to 7.2.2 ([a4c1988](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a4c1988))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.56.0 to 1.58.0 ([e1cff1c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e1cff1c))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([777481a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/777481a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([918101d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/918101d))
+* **deps-dev:** update semantic-release requirement ([f5d59c2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f5d59c2))
+
 # [1.8.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.7.1...v1.8.0) (2018-11-02)
 
 
