@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.9.0...v1.9.1) (2018-11-05)
+
+
+### 🐛 Bug Fixes
+
+* change property name from group to grouping ([f58be00](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f58be00))
+
 # [1.9.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.8.0...v1.9.0) (2018-11-03)
 
 
