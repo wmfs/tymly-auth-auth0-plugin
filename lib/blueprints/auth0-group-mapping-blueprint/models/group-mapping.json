@@ -1,10 +1,10 @@
 {
   "plural": "group-mappings",
-  "primaryKey": ["group", "roleId"],
+  "primaryKey": ["grouping", "roleId"],
   "description": "Mapping Auth0 Groups to RBAC roles",
   "type": "object",
   "properties": {
-    "group": {
+    "grouping": {
       "type": "string"
     },
     "roleId": {
@@ -14,5 +14,5 @@
       "type": "string"
     }
   },
-  "required": ["group", "roleId"]
+  "required": ["grouping", "roleId"]
 }
