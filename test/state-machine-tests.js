@@ -9,6 +9,7 @@ describe('Auth0 Groups Mapping State Machine', function () {
 
   let tymlyService
   let statebox
+  let auth0GroupMapping
 
   const adminUser = 'administrator'
 
@@ -25,6 +26,7 @@ describe('Auth0 Groups Mapping State Machine', function () {
 
         tymlyService = services.tymly
         statebox = services.statebox
+        auth0GroupMapping = services.auth0GroupMapping
 
         await services.rbacAdmin.ensureUserRoles(adminUser, ['tymly_rbacAdmin'])
         services.rbac.debug()
@@ -91,6 +93,69 @@ describe('Auth0 Groups Mapping State Machine', function () {
         { auth0: '_FireSafety', roles: ['safeAndWell'] }
       ])
     })
+  })
+
+  describe('remove mappings', () => {
+    it('remove a mapping', async () => {
+      await statebox.startExecution(
+        {
+          auth0: '_ICT Boss',
+          roleId: 'admin'
+        },
+        'auth0_removeMapping_1_0',
+        {
+          sendResponse: 'COMPLETE',
+          userId: adminUser
+        }
+      )
+
+      const mappings = auth0GroupMapping.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Boss', roles: ['tymly_TeamLeader'] },
+        { auth0: '_FireSafety', roles: ['safeAndWell'] }
+      ])
+    })
+
+    it('remove a mapping, bad role', async () => {
+      await statebox.startExecution(
+        {
+          auth0: '_FireSafety',
+          roleId: 'a load of nonsense'
+        },
+        'auth0_removeMapping_1_0',
+        {
+          sendResponse: 'COMPLETE',
+          userId: adminUser
+        }
+      )
+
+      const mappings = auth0GroupMapping.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Boss', roles: ['tymly_TeamLeader'] },
+        { auth0: '_FireSafety', roles: ['safeAndWell'] }
+      ])
+    })
+
+    it('remove a mapping, bad group', async () => {
+      await statebox.startExecution(
+        {
+          auth0: 'made up name',
+          roleId: 'not important'
+        },
+        'auth0_removeMapping_1_0',
+        {
+          sendResponse: 'COMPLETE',
+          userId: adminUser
+        }
+      )
+
+      const mappings = auth0GroupMapping.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Boss', roles: ['tymly_TeamLeader'] },
+        { auth0: '_FireSafety', roles: ['safeAndWell'] }
+      ])
+    })
+
   })
 
   after('shutdown Tymly', async () => {
