@@ -6,7 +6,9 @@
   "StartAt": "ListMappings",
   "States": {
     "ListMappings": {
-      "Type": "Pass",
+      "Type": "Task",
+      "Resource": "module:listAuth0Mappings",
+      "ResultPath": "$.mappings",
       "End": true
     }
   },
