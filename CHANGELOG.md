@@ -1,3 +1,25 @@
+# [1.10.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.9.1...v1.10.0) (2018-11-12)
+
+
+### ✨ Features
+
+* Added auth0_removeMapping state machine ([2365d50](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/2365d50))
+* Auth0 groups can map to more than one role. ([22ad40e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/22ad40e))
+* Implemented auth0_addMapping_1_0 state machine ([34bc421](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/34bc421))
+* New removeAuth0Mapping method ([5840525](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/5840525))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([1536411](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1536411))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([6d86360](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6d86360))
+* **deps-dev:** update semantic-release requirement ([b5b9f66](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b5b9f66))
+
+
+### 💎 Styles
+
+* Standards fix ([0fbe714](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0fbe714))
+
 ## [1.9.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.9.0...v1.9.1) (2018-11-05)
 
 
