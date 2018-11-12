@@ -155,7 +155,6 @@ describe('Auth0 Groups Mapping State Machine', function () {
         { auth0: '_FireSafety', roles: ['safeAndWell'] }
       ])
     })
-
   })
 
   after('shutdown Tymly', async () => {
