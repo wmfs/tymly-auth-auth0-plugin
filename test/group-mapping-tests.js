@@ -171,7 +171,35 @@ describe('group mapping tests', () => {
         { auth0: '_ICT Devs', roles: ['testTymly_Devs'] }
       ])
     })
+  })
 
+  describe('remove mappings', () => {
+    it('remove a mapping', async () => {
+      await auth0GroupMappingService.removeAuth0Mapping('_ICT Devs', 'testTymly_Devs')
+
+      const mappings = auth0GroupMappingService.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Team Leaders', roles: ['testTymly_TeamLeader', 'expense_approvers'] }
+      ])
+    })
+
+    it('remove a mapping, bad role', async () => {
+      await auth0GroupMappingService.removeAuth0Mapping('_ICT Team Leaders', 'testTymly_Devs')
+
+      const mappings = auth0GroupMappingService.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Team Leaders', roles: ['testTymly_TeamLeader', 'expense_approvers'] }
+      ])
+    })
+
+    it('remove a mapping, bad group', async () => {
+      await auth0GroupMappingService.removeAuth0Mapping('ICE CREAM VENDORS', 'cornetto_fiends')
+
+      const mappings = auth0GroupMappingService.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Team Leaders', roles: ['testTymly_TeamLeader', 'expense_approvers'] }
+      ])
+    })
   })
 
   describe('pull user info from Auth0, check mapping', () => {
