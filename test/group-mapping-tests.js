@@ -126,7 +126,10 @@ describe('group mapping tests', () => {
   })
 
   describe('mapping Auth0 groups to RBAC groups', () => {
-    it('no mapping provided', () => {
+    it('no mapping provided', async () => {
+      const mappings = auth0GroupMappingService.listAuth0Mappings()
+      expect(mappings).to.eql([])
+
       const rbacRoles = auth0GroupMappingService.groupsToRoles(userData.groups)
       expect(rbacRoles).to.eql([])
     })
@@ -137,9 +140,38 @@ describe('group mapping tests', () => {
       const rbacRoles = auth0GroupMappingService.groupsToRoles(userData.groups)
       expect(rbacRoles).to.eql(['testTymly_TeamLeader'])
 
-      const mappings = await storageService.models.auth0_groupMapping.find({})
-      expect(mappings.length).to.eql(1)
+      const mappings = auth0GroupMappingService.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Team Leaders', roles: ['testTymly_TeamLeader'] }
+      ])
     })
+
+    it('add another mapping', async () => {
+      await auth0GroupMappingService.addAuth0Mapping('_ICT Devs', 'testTymly_Devs')
+
+      const rbacRoles = auth0GroupMappingService.groupsToRoles(userData.groups)
+      expect(rbacRoles).to.eql(['testTymly_TeamLeader'])
+
+      const mappings = auth0GroupMappingService.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Team Leaders', roles: ['testTymly_TeamLeader'] },
+        { auth0: '_ICT Devs', roles: ['testTymly_Devs'] }
+      ])
+    })
+
+    it('add second role to a mapping', async () => {
+      await auth0GroupMappingService.addAuth0Mapping('_ICT Team Leaders', 'expense_approvers')
+
+      const rbacRoles = auth0GroupMappingService.groupsToRoles(userData.groups)
+      expect(rbacRoles).to.eql(['testTymly_TeamLeader', 'expense_approvers'])
+
+      const mappings = auth0GroupMappingService.listAuth0Mappings()
+      expect(mappings).to.eql([
+        { auth0: '_ICT Team Leaders', roles: ['testTymly_TeamLeader', 'expense_approvers'] },
+        { auth0: '_ICT Devs', roles: ['testTymly_Devs'] }
+      ])
+    })
+
   })
 
   describe('pull user info from Auth0, check mapping', () => {
@@ -154,12 +186,12 @@ describe('group mapping tests', () => {
       expect(initialRbacRoles).to.eql(['$everyone'])
 
       const roles = await userInfoService.rolesFromUserId('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
-      expect(roles).to.eql(['testTymly_TeamLeader'])
+      expect(roles).to.eql(['testTymly_TeamLeader', 'expense_approvers'])
 
       rbacService.userInfo = userInfoService
       rbacService.resetCache()
       const rbacRoles = await rbacService.listUserRoles('ad|WMFS|2c970731-68f1-44e6-99bb-00d5f8e60cf5')
-      expect(rbacRoles).to.have.members(['testTymly_TeamLeader', '$everyone'])
+      expect(rbacRoles).to.have.members(['testTymly_TeamLeader', 'expense_approvers', '$everyone'])
     })
   })
 
