@@ -1,0 +1,8 @@
+{
+  "AddAuth0Mapping": {
+    "Type": "Task",
+    "Resource": "module:listAuth0Mappings",
+    "ResultPath": "$",
+    "End": true
+  }
+}
