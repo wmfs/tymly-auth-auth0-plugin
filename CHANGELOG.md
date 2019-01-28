@@ -1,3 +1,44 @@
+## [1.10.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.10.0...v1.10.1) (2019-01-28)
+
+
+### 🐛 Bug Fixes
+
+* If userInfo has no email address, try userPrincipalName ([7db3a7b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/7db3a7b))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([4f9ef19](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4f9ef19))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.58.0 to 1.59.0 ([92706b8](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/92706b8))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.59.0 to 1.60.0 ([1dc1c3a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1dc1c3a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.60.0 to 1.61.0 ([08862c3](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/08862c3))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.61.0 to 1.62.0 ([1f1d9de](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1f1d9de))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.62.0 to 1.63.0 ([d757887](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d757887))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.63.0 to 1.64.0 ([091652d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/091652d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.64.0 to 1.65.0 ([cfd0ac4](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cfd0ac4))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.65.0 to 1.65.1 ([a889da3](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a889da3))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.65.1 to 1.66.0 ([b462ad1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b462ad1))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([0a1926f](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0a1926f))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([c46bcf6](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c46bcf6))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([3455696](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3455696))
+* **deps-dev:** update moment requirement from 2.22.2 to 2.23.0 ([b4e87ce](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b4e87ce))
+* **deps-dev:** update semantic-release requirement ([082931b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/082931b))
+* **deps-dev:** update semantic-release requirement ([872022f](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/872022f))
+* **deps-dev:** update semantic-release requirement ([82aee94](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/82aee94))
+* **deps-dev:** update semantic-release requirement ([15ed3c4](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/15ed3c4))
+* **deps-dev:** update semantic-release requirement ([#163](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/163)) ([249d67e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/249d67e))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add circle ci config ([4ce6214](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4ce6214))
+* **travis:** update travis config ([80d599e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/80d599e))
+
+
+### ♻️ Chores
+
+* Add examples for state machines ([d10b95e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d10b95e))
+
 # [1.10.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.9.1...v1.10.0) (2018-11-12)
 
 
