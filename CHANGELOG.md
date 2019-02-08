@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.10.1...v1.11.0) (2019-02-08)
+
+
+### 🛠 Builds
+
+* **deps:** bump debug, boom ([facfba2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/facfba2))
+* **dev-deps:** bump moment, [@wmfs](https://github.com/wmfs)/tymly, nyc, semantic-release and chums ([a0ba0c5](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a0ba0c5))
+
 ## [1.10.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.10.0...v1.10.1) (2019-01-28)
 
 
