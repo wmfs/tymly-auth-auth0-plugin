@@ -8,6 +8,10 @@
     "RemoveMapping": {
       "Type": "Task",
       "Resource": "module:removeAuth0Mapping",
+      "Parameters": {
+        "auth0.$": "$.formData.auth0",
+        "roleId.$": "$.formData.roleId"
+      },
       "ResultPath": null,
       "End": true
     }

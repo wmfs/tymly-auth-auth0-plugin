@@ -1,0 +1,4 @@
+This document specifies a JSON object called an "AddAuth0Mapping".
+An AddAuth0Mapping MUST have a string field named "auth0".
+An AddAuth0Mapping MUST have a string field named "roleId".
+An AddAuth0Mapping MAY have a string field named "description".

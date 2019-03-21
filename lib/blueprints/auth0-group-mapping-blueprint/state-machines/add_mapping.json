@@ -8,6 +8,11 @@
     "AddMapping": {
       "Type": "Task",
       "Resource": "module:addAuth0Mapping",
+      "Parameters": {
+        "auth0.$": "$.formData.auth0",
+        "roleId.$": "$.formData.roleId",
+        "description.$": "$.formData.description"
+      },
       "ResultPath": null,
       "End": true
     }

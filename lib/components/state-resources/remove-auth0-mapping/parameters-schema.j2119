@@ -1,0 +1,3 @@
+This document specifies a JSON object called a "RemoveAuth0Mapping".
+A RemoveAuth0Mapping MUST have a string field named "auth0".
+A RemoveAuth0Mapping MUST have a string field named "roleId".
