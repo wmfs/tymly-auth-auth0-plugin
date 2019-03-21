@@ -1,3 +1,16 @@
+## [1.11.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.11.0...v1.11.1) (2019-03-21)
+
+
+### 🐛 Bug Fixes
+
+* Correct parameter blocks ([a6d57bc](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a6d57bc))
+* Fixed state resource and state machine validation. ([3738101](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3738101))
+
+
+### ♻️ Chores
+
+* **dev-deps:** Bump tymly, codecov, mocha, nyc ([19e5d05](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/19e5d05))
+
 # [1.11.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.10.1...v1.11.0) (2019-02-08)
 
 
