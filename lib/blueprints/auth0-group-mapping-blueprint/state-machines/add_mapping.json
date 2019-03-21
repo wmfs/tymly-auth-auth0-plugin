@@ -9,9 +9,9 @@
       "Type": "Task",
       "Resource": "module:addAuth0Mapping",
       "Parameters": {
-        "auth0.$": "$.formData.auth0",
-        "roleId.$": "$.formData.roleId",
-        "description.$": "$.formData.description"
+        "auth0.$": "$.auth0",
+        "roleId.$": "$.roleId",
+        "description.$": "$.description"
       },
       "ResultPath": null,
       "End": true

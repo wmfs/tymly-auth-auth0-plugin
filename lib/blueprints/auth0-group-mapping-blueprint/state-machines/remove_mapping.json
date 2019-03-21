@@ -9,8 +9,8 @@
       "Type": "Task",
       "Resource": "module:removeAuth0Mapping",
       "Parameters": {
-        "auth0.$": "$.formData.auth0",
-        "roleId.$": "$.formData.roleId"
+        "auth0.$": "$.auth0",
+        "roleId.$": "$.roleId"
       },
       "ResultPath": null,
       "End": true
