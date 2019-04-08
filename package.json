@@ -35,7 +35,7 @@
     "conventional-changelog-metahub": "2.0.2",
     "cz-conventional-changelog": "2.1.0",
     "dirty-chai": "2.0.1",
-    "mocha": "6.0.2",
+    "mocha": "6.1.1",
     "moment": "2.24.0",
     "nyc": "13.3.0",
     "semantic-release": "15.13.3",
