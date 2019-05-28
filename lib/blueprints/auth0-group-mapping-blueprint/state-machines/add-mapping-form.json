@@ -1,0 +1,45 @@
+{
+  "Comment": "Add an Auth0 Group to RBAC role mapping",
+  "name": "Add an Auth0 Group to RBAC role mapping",
+  "Version": "1.0",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "form",
+  "StartAt": "AwaitingHumanInput",
+  "States": {
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "auth0_addMapping"
+      },
+      "ResultPath": "$.formData",
+      "Next": "AddMapping"
+    },
+    "AddMapping": {
+      "Type": "Task",
+      "Resource": "module:addAuth0Mapping",
+      "Parameters": {
+        "auth0.$": "$.formData.auth0",
+        "roleId.$": "$.formData.roleId",
+        "description.$": "$.formData.description"
+      },
+      "ResultPath": null,
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_rbacAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

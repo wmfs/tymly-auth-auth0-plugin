@@ -2,7 +2,6 @@
   "Comment": "Lists the Auth0 groups to RBAC roles mappings",
   "Version": "1.0",
   "version": "1.0",
-
   "StartAt": "ListMappings",
   "States": {
     "ListMappings": {
@@ -12,7 +11,6 @@
       "End": true
     }
   },
-
   "restrictions": [
     {
       "roleId": "tymly_rbacAdmin",

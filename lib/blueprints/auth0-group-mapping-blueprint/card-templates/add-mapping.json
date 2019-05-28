@@ -1,0 +1,53 @@
+{
+  "templateMeta": {
+    "name": "add-mapping",
+    "title": "Add Auth0 Mapping",
+    "category": "system"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Add an Auth0 Group to RBAC role mapping"
+    },
+    {
+      "type": "Input.Text",
+      "title": "Auth0 Role",
+      "id": "auth0",
+      "spacing": "medium",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "type": "Input.Text",
+      "title": "Role ID",
+      "id": "roleId",
+      "spacing": "medium",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "type": "Input.Text",
+      "title": "Description",
+      "id": "description",
+      "spacing": "medium",
+      "validation": {
+        "required": true
+      }
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Cancel"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

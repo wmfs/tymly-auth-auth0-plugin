@@ -1,0 +1,41 @@
+{
+  "Comment": "Lists the Auth0 groups to RBAC roles mappings",
+  "name": "Lists the Auth0 groups to RBAC roles mappings",
+  "Version": "1.0",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "ListMappings",
+  "States": {
+    "ListMappings": {
+      "Type": "Task",
+      "Resource": "module:listAuth0Mappings",
+      "ResultPath": "$.mappings",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "board",
+        "uiName": "auth0_listMappings",
+        "dataPath": "$"
+      },
+      "ResultPath": "$.formData",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_rbacAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

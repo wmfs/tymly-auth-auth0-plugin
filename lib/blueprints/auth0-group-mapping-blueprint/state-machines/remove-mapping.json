@@ -2,7 +2,6 @@
   "Comment": "Remove an Auth0 Group to RBAC role mapping",
   "Version": "1.0",
   "version": "1.0",
-
   "StartAt": "RemoveMapping",
   "States": {
     "RemoveMapping": {
@@ -16,7 +15,6 @@
       "End": true
     }
   },
-
   "restrictions": [
     {
       "roleId": "tymly_rbacAdmin",

@@ -1,0 +1,32 @@
+{
+  "templateMeta": {
+    "name": "list-mappings",
+    "title": "List Auth0 Mappings",
+    "category": "system"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Lists the Auth0 groups to RBAC roles mappings"
+    },
+    {
+      "id": "groupMappingList",
+      "type": "List",
+      "showLaunches": false,
+      "arrayPath": "mappings",
+      "templates": {
+        "label": "Auth0: {{item.auth0}}",
+        "sublabel": "Roles: {{item.roles.join(', ')}}"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Cancel"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
