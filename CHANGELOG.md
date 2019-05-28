@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.11.1...v1.12.0) (2019-05-28)
+
+
+### ✨ Features
+
+* add some interactive cards to add and list mappings ([c71360c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c71360c))
+
 ## [1.11.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.11.0...v1.11.1) (2019-03-21)
 
 
