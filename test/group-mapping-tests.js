@@ -83,7 +83,9 @@ const userData = {
   logins_count: 493
 }
 
-describe('group mapping tests', () => {
+describe('group mapping tests', function () {
+  this.timeout(process.env.TIMEOUT || 5000)
+
   let tymlyService
   let userInfoService
   let auth0GroupMappingService
@@ -108,7 +110,9 @@ describe('group mapping tests', () => {
       {
         pluginPaths: [
           path.resolve(__dirname, './../lib'),
-          require.resolve('@wmfs/tymly-rbac-plugin')
+          require.resolve('@wmfs/tymly-rbac-plugin'),
+          require.resolve('@wmfs/tymly-cardscript-plugin'),
+          require.resolve('@wmfs/tymly-solr-plugin')
         ],
         blueprintPaths: [],
         config: {}
