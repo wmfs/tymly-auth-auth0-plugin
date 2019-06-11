@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.12.0...v1.13.0) (2019-06-11)
+
+
+### ✨ Features
+
+* adjust wording on cards ([53c6e52](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/53c6e52))
+
 # [1.12.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.11.1...v1.12.0) (2019-05-28)
 
 
