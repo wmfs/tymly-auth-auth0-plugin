@@ -16,7 +16,7 @@
       "showLaunches": false,
       "arrayPath": "mappings",
       "templates": {
-        "label": "Auth0: {{item.auth0}}",
+        "label": "Auth0 Group: {{item.auth0}}",
         "sublabel": "Roles: {{item.roles.join(', ')}}"
       }
     }

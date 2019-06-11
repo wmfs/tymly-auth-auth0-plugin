@@ -12,7 +12,7 @@
     },
     {
       "type": "Input.Text",
-      "title": "Auth0 Role",
+      "title": "Auth0 Group",
       "id": "auth0",
       "spacing": "medium",
       "validation": {
