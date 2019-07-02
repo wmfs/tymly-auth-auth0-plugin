@@ -1,3 +1,15 @@
+# [1.14.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.13.0...v1.14.0) (2019-07-02)
+
+
+### ✨ Features
+
+* refactor form to use look up of template roles ([60e5088](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/60e5088))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update semantic-release requirement ([13cf152](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/13cf152))
+
 # [1.13.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.12.0...v1.13.0) (2019-06-11)
 
 
