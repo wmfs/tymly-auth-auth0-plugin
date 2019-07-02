@@ -6,37 +6,37 @@ version: 2
 jobs:
   test:
     docker:
-    # use node:lts
-    - image: circleci/node:lts
-      environment:
-        TZ: "Europe/London"
-    working_directory: ~/repo
-    steps:
-    - checkout
-    - run:
-        name: install
-        command: npm install
-    - run:
-        name: test
-        command: npm test
-    - run:
-        name: codecov
-        command: npm run coverage
+      # use node:lts
+      - image: circleci/node:lts
+        environment:
+          TZ: "Europe/London"
+      working_directory: ~/repo
+      steps:
+      - checkout
+      - run:
+          name: install
+          command: npm install
+      - run:
+          name: test
+          command: npm test
+      - run:
+          name: codecov
+          command: npm run coverage
   release:
     docker:
-    # use node:lts
-    - image: circleci/node:lts
-      environment:
-        TZ: "Europe/London"
-    working_directory: ~/repo
-    steps:
-    - checkout
-    - run:
-        name: install
-        command: npm install
-    - run:
-        name: release
-        command: npx semantic-release
+      # use node:lts
+      - image: circleci/node:lts
+        environment:
+          TZ: "Europe/London"
+      working_directory: ~/repo
+      steps:
+      - checkout
+      - run:
+          name: install
+          command: npm install
+      - run:
+          name: release
+          command: npx semantic-release
 
 
 workflows:
