@@ -16,6 +16,14 @@
       "Type": "Task",
       "Resource": "module:listAuth0Mappings",
       "ResultPath": "$.mappings",
+      "Next": "AddLaunches"
+    },
+    "AddLaunches": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "addLaunchesToListMappings"
+      },
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {

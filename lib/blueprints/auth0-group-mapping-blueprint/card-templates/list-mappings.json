@@ -13,7 +13,7 @@
     {
       "id": "groupMappingList",
       "type": "List",
-      "showLaunches": false,
+      "showLaunches": true,
       "arrayPath": "mappings",
       "templates": {
         "label": "Auth0 Group: {{item.auth0}}",

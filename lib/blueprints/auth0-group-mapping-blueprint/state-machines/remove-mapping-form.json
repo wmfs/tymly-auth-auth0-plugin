@@ -1,0 +1,40 @@
+{
+  "Comment": "Remove an Auth0 Group to RBAC role mapping",
+  "name": "Remove an Auth0 Group to RBAC role mapping",
+  "Version": "1.0",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "StartAt": "AwaitingHumanInput",
+  "States": {
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "auth0_removeMapping",
+        "dataPath": "$"
+      },
+      "Next": "RemoveMapping"
+    },
+    "RemoveMapping": {
+      "Type": "Task",
+      "Resource": "module:removeAuth0Mapping",
+      "Parameters": {
+        "auth0.$": "$.auth0",
+        "roleId.$": "$.roleId"
+      },
+      "ResultPath": null,
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_rbacAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
