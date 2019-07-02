@@ -20,10 +20,12 @@
       }
     },
     {
-      "type": "Input.Text",
-      "title": "Role ID",
       "id": "roleId",
+      "title": "Role ID",
+      "type": "Input.ChoiceSet",
       "spacing": "medium",
+      "choices": { "$tymlyRef": "function:auth0_getTemplateRoles" },
+      "style": "compact",
       "validation": {
         "required": true
       }
