@@ -1,3 +1,15 @@
+# [1.15.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.14.0...v1.15.0) (2019-07-02)
+
+
+### ✨ Features
+
+* allow to remove mapping ([72743fd](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/72743fd))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly to 1.94.1 ([b2425a1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b2425a1))
+
 # [1.14.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.13.0...v1.14.0) (2019-07-02)
 
 
