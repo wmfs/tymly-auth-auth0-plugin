@@ -1,3 +1,32 @@
+# [1.16.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.15.0...v1.16.0) (2019-07-16)
+
+
+### ✨ Features
+
+* sort listed roles so easier to find in choices ([4824d10](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4824d10))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([7620bbe](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/7620bbe))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin requirement ([2dc1594](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/2dc1594))
+* **deps-dev:** update codecov requirement from 3.2.0 to 3.5.0 ([f6d788b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f6d788b))
+* **deps-dev:** update mocha requirement from 6.0.2 to 6.1.4 ([a1c8cf7](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a1c8cf7))
+* **deps-dev:** update nyc requirement from 13.3.0 to 14.1.1 ([32fe67d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/32fe67d))
+
+
+### 📚 Documentation
+
+* add circleci status [skip ci] ([264da30](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/264da30))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** refactor yaml ([9d2af25](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/9d2af25))
+* **circle:** Refactor yaml again ([848cea4](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/848cea4))
+* **circle:** Update Circle CI config - migration from Travis ([1f54061](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1f54061))
+* **travis:** remove Travis config ([fe4015e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/fe4015e))
+
 # [1.15.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.14.0...v1.15.0) (2019-07-02)
 
 
