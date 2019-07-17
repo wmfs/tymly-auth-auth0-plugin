@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.0...v1.16.1) (2019-07-17)
+
+
+### 🐛 Bug Fixes
+
+* adjust remove mapping launches to be specific to the role ([9a6eff6](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/9a6eff6))
+
 # [1.16.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.15.0...v1.16.0) (2019-07-16)
 
 
