@@ -14,7 +14,7 @@
       "id": "groupMappingList",
       "type": "List",
       "showLaunches": true,
-      "arrayPath": "mappings",
+      "arrayPath": "data.mappings",
       "templates": {
         "label": "Auth0 Group: {{item.auth0}}",
         "sublabel": "Roles: {{item.roles.join(', ')}}"
