@@ -1,3 +1,15 @@
+## [1.16.2](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.1...v1.16.2) (2019-10-22)
+
+
+### 🐛 Bug Fixes
+
+* List data path ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e7b3b88))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dev dependancies ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cd4accd))
+
 ## [1.16.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.0...v1.16.1) (2019-07-17)
 
 
