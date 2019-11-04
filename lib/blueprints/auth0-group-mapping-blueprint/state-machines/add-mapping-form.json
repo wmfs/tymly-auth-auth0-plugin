@@ -1,6 +1,6 @@
 {
-  "Comment": "Add an Auth0 Group to RBAC role mapping",
-  "name": "Add an Auth0 Group to RBAC role mapping",
+  "Comment": "Map Auth0 Group to Tymly Role",
+  "name": "Map Auth0 Group to Tymly Role",
   "Version": "1.0",
   "version": "1.0",
   "categories": [

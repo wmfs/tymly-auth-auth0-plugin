@@ -1,6 +1,6 @@
 {
-  "Comment": "Lists the Auth0 groups to RBAC roles mappings",
-  "name": "Lists the Auth0 groups to RBAC roles mappings",
+  "Comment": "View mappings between Auth0 groups and Tymly Roles",
+  "name": "View mappings between Auth0 groups and Tymly Roles",
   "Version": "1.0",
   "version": "1.0",
   "categories": [
