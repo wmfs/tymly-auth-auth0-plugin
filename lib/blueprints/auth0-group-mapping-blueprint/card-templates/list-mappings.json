@@ -11,14 +11,21 @@
       "title": "Lists the Auth0 groups to RBAC roles mappings"
     },
     {
-      "id": "groupMappingList",
-      "type": "List",
+      "id": "groupMappingTable",
+      "type": "Table",
       "showLaunches": true,
       "arrayPath": "data.mappings",
-      "templates": {
-        "label": "Auth0 Group: {{item.auth0}}",
-        "sublabel": "Roles: {{item.roles.join(', ')}}"
-      }
+      "columns": [
+        {
+          "title": "Auth0 Group",
+          "field": "auth0"
+        },
+        {
+          "title": "Tymly Role",
+          "field": "roles",
+          "format": "item.roles.join(', ')"
+        }
+      ]
     }
   ],
   "actions": [

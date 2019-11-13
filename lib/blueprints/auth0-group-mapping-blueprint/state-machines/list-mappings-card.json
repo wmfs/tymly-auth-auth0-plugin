@@ -30,7 +30,6 @@
       "Type": "Task",
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
-        "uiType": "board",
         "uiName": "auth0_listMappings",
         "dataPath": "$"
       },
