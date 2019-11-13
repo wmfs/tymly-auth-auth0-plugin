@@ -1,3 +1,15 @@
+## [1.16.3](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.2...v1.16.3) (2019-11-13)
+
+
+### 🐛 Bug Fixes
+
+* reset caches on adding/removing mappings ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e8f4c3f))
+
+
+### 📦 Code Refactoring
+
+* update titles of state machines ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ba06576))
+
 ## [1.16.2](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.1...v1.16.2) (2019-10-22)
 
 
