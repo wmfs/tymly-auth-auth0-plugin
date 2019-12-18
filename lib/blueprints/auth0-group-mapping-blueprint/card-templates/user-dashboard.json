@@ -7,18 +7,16 @@
   "type": "AdaptiveCard",
   "body": [
     {
-      "type": "Jumbotron",
-      "title": "Auth0 User Dashboard"
-    },
-    {
-      "type": "TextBlock",
-      "text": "<pre>{{ JSON.stringify(data, null, 2) }}</pre>"
-    },
-    {
-      "type": "TextBlock",
-      "text": "User Details",
-      "weight": "bolder",
-      "size": "medium"
+      "type": "Container",
+      "color": "accent",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "User Details",
+          "weight": "bolder",
+          "size": "medium"
+        }
+      ]
     },
     {
       "type": "FactSet",
@@ -54,13 +52,16 @@
       ]
     },
     {
-      "type": "separator"
-    },
-    {
-      "type": "TextBlock",
-      "text": "Groups from Auth0",
-      "weight": "bolder",
-      "size": "medium"
+      "type": "Container",
+      "color": "accent",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Groups from Auth0",
+          "weight": "bolder",
+          "size": "medium"
+        }
+      ]
     },
     {
       "type": "List",
@@ -71,15 +72,61 @@
       "notFoundText": "No Auth0 groups found."
     },
     {
-      "type": "separator"
+      "type": "Container",
+      "color": "accent",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Roles from Auth0 groups",
+          "weight": "bolder",
+          "size": "medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "These roles are calculated by role mappings assigned manually in Tymly."
+        }
+      ]
     },
     {
-      "type": "TextBlock",
-      "text": "// TODO: show groups stored in tymly"
+      "type": "List",
+      "arrayPath": "data.rolesFromAuth0",
+      "templates": {
+        "label": "{{item}}"
+      },
+      "notFoundText": "There are no Tymly roles based on this user's Auth0 groups."
     },
     {
-      "type": "TextBlock",
-      "text": "// TODO: button to refresh groups stored in tymly"
+      "type": "Container",
+      "color": "accent",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Roles stored in Tymly cache",
+          "weight": "bolder",
+          "size": "medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "These roles are stored in Tymly cache when the user logs in the first time."
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "arrayPath": "data.rolesFromCache",
+      "templates": {
+        "label": "{{item}}"
+      },
+      "notFoundText": "There are no cached roles for this user."
+    },
+    {
+      "showWhen": "data.rolesFromCache.length > 0",
+      "type": "Action.PushCard",
+      "title": "Clear cached roles",
+      "stateMachineName": "auth0_clearCachedUserRoles_1_0",
+      "input": {
+        "userId": "data.userId"
+      }
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

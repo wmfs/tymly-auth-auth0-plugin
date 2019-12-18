@@ -13,6 +13,14 @@
       "InputPath": "$.userId",
       "Resource": "module:getAllAuth0UserById",
       "ResultPath": "$.auth0User",
+      "Next": "GetStoredUserRoles"
+    },
+    "GetStoredUserRoles": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "getStoredUserRoles"
+      },
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
