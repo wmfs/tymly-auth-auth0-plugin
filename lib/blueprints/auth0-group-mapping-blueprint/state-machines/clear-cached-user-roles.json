@@ -12,8 +12,16 @@
       "Type": "Task",
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
-        "uiName": "auth0_userDashboard",
+        "uiName": "auth0_clearCachedUserRoles",
         "dataPath": "$"
+      },
+      "Next": "Clear"
+    },
+    "Clear": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "clearCachedUserRoles"
       },
       "End": true
     }
