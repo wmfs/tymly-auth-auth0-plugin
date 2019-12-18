@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.17.0...v1.17.1) (2019-12-18)
+
+
+### 🐛 Bug Fixes
+
+* add user picture on dashboard ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ece2a66))
+
 # [1.17.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.3...v1.17.0) (2019-12-18)
 
 
