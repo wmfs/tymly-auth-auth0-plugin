@@ -1,3 +1,18 @@
+# [1.17.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.3...v1.17.0) (2019-12-18)
+
+
+### ✨ Features
+
+* card template to search for users ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b6f9949))
+* clear cached user roles ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0232c40))
+* get user roles ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8719423))
+* user dashboard to display user details and groups from auth0 ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/40086c5))
+
+
+### 🐛 Bug Fixes
+
+* default user groups to empty array ([](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cae40c4))
+
 ## [1.16.3](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.16.2...v1.16.3) (2019-11-13)
 
 
