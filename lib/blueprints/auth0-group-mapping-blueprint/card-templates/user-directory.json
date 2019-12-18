@@ -1,0 +1,68 @@
+{
+  "templateMeta": {
+    "name": "user-directory",
+    "title": "Auth0 User Directory",
+    "category": "system"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Auth0 User Directory"
+    },
+    {
+      "id": "userSearch",
+      "type": "Input.ApiLookup",
+      "showPagination": true,
+      "resultsPerPage": 10,
+      "buttonText": "Search",
+      "endpoint": {
+        "name": "auth0_searchUsers_1_0"
+      },
+      "ctxPaths": {
+        "results": "searchResults.results",
+        "totalHits": "searchResults.totalHits"
+      },
+      "parametersCard": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "id": "query",
+            "type": "Input.Text",
+            "spacing": "medium",
+            "icon": "search"
+          }
+        ]
+      },
+      "resultsCard": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "{{data.userSearch.summary.totalHits}} result{{data.userSearch.summary.totalHits > 1 ? 's' : ''}} found",
+            "weight": "lighter",
+            "size": "small"
+          },
+          {
+            "id": "userResultsList",
+            "type": "List",
+            "showLaunches": true,
+            "clickToLaunch": true,
+            "arrayPath": "data.userSearch.results",
+            "templates": {
+              "label": "{{item.name}}",
+              "sublabel": [
+                "{{item.user_id}}",
+                "{{item.email || 'No email'}}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
