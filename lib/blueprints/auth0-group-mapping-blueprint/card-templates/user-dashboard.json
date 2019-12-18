@@ -12,7 +12,74 @@
     },
     {
       "type": "TextBlock",
-      "text": "{{ JSON.stringify(data, null, 2) }}"
+      "text": "<pre>{{ JSON.stringify(data, null, 2) }}</pre>"
+    },
+    {
+      "type": "TextBlock",
+      "text": "User Details",
+      "weight": "bolder",
+      "size": "medium"
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Name",
+          "value": "{{ data.auth0User.name }}"
+        },
+        {
+          "title": "Email",
+          "value": "{{ data.auth0User.email }}"
+        },
+        {
+          "title": "User ID",
+          "value": "{{ data.auth0User.user_id }}"
+        },
+        {
+          "title": "Last Login",
+          "value": "{{ formatDate(data.auth0User.last_login, 'DD MMM YYYY HH:mm') }}"
+        },
+        {
+          "title": "Login Count",
+          "value": "{{ data.auth0User.logins_count }}"
+        },
+        {
+          "title": "Department",
+          "value": "{{ data.auth0User.department }}"
+        },
+        {
+          "title": "Description",
+          "value": "{{ data.auth0User.description }}"
+        }
+      ]
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Groups from Auth0",
+      "weight": "bolder",
+      "size": "medium"
+    },
+    {
+      "type": "List",
+      "arrayPath": "data.auth0User.groups",
+      "templates": {
+        "label": "{{item}}"
+      },
+      "notFoundText": "No Auth0 groups found."
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "TextBlock",
+      "text": "// TODO: show groups stored in tymly"
+    },
+    {
+      "type": "TextBlock",
+      "text": "// TODO: button to refresh groups stored in tymly"
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
