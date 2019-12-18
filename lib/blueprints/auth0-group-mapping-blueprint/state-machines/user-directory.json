@@ -1,0 +1,32 @@
+{
+  "Comment": "Search for users",
+  "name": "Auth0 User Directory",
+  "Version": "1.0",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "instigatorGroup": "app",
+  "StartAt": "AwaitingHumanInput",
+  "States": {
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiName": "auth0_userDirectory"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_rbacAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

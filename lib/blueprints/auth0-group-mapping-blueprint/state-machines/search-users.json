@@ -1,0 +1,28 @@
+{
+  "Comment": "Search Auth0 Users",
+  "name": "Search Auth0 Users",
+  "Version": "1.0",
+  "version": "1.0",
+  "categories": [
+    "system"
+  ],
+  "StartAt": "Search",
+  "States": {
+    "Search": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "searchUsers"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "tymly_rbacAdmin",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
