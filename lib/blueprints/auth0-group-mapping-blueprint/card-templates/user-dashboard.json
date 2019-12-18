@@ -19,6 +19,13 @@
       ]
     },
     {
+      "type": "Image",
+      "showWhen": "data.auth0User.picture",
+      "urlBind": "data.auth0User.picture",
+      "size": "medium",
+      "style": "person"
+    },
+    {
       "type": "FactSet",
       "facts": [
         {
