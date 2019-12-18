@@ -1,0 +1,8 @@
+{
+  "GetAllAuth0UserById": {
+    "Type": "Task",
+    "Resource": "module:GetAllAuth0UserById",
+    "ResultPath": "$",
+    "End": true
+  }
+}

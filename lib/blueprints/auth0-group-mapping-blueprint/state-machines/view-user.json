@@ -6,15 +6,22 @@
   "categories": [
     "system"
   ],
-  "StartAt": "AwaitingHumanInput",
+  "StartAt": "GetAllAuth0UserById",
   "States": {
+    "GetAllAuth0UserById": {
+      "Type": "Task",
+      "InputPath": "$.userId",
+      "Resource": "module:getAllAuth0UserById",
+      "ResultPath": "$.auth0User",
+      "Next": "AwaitingHumanInput"
+    },
     "AwaitingHumanInput": {
       "Type": "Task",
       "Resource": "module:awaitingHumanInput",
       "ResourceConfig": {
-        "uiName": "auth0_userDashboard"
+        "uiName": "auth0_userDashboard",
+        "dataPath": "$"
       },
-      "ResultPath": "$",
       "End": true
     }
   },
