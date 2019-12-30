@@ -1,0 +1,12 @@
+{
+  "name": "auth-auth0",
+  "version": "1.17.1",
+  "label": "Auth0",
+  "author": "Jas Bahra",
+  "organisation": "West Midlands Fire Service",
+  "description": "Tymly plugin to support Auth0 authentication",
+  "categories": [
+    "authentication",
+    "auth0"
+  ]
+}
