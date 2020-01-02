@@ -37,7 +37,7 @@ jobs:
     - run:
         name: release
         command: |
-          chmod +x version_blueprint
+          chmod +x version_plugin
           npx semantic-release
 
 
