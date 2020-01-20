@@ -108,6 +108,30 @@
       "items": [
         {
           "type": "TextBlock",
+          "text": "Roles Memberships",
+          "weight": "bolder",
+          "size": "medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "These roles are entered manually into the Role Membership model for this user."
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "arrayPath": "data.roleMemberships",
+      "templates": {
+        "label": "{{item.roleId}}"
+      },
+      "notFoundText": "There are no role memberships for this user."
+    },
+    {
+      "type": "Container",
+      "color": "accent",
+      "items": [
+        {
+          "type": "TextBlock",
           "text": "Roles stored in Tymly cache",
           "weight": "bolder",
           "size": "medium"

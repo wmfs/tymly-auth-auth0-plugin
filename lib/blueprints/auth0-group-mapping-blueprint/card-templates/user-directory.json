@@ -4,6 +4,15 @@
     "title": "Auth0 User Directory",
     "category": "system"
   },
+  "hooks": {
+    "afterLeave": {
+      "actions": [
+        {
+          "type": "Action.StoreData"
+        }
+      ]
+    }
+  },
   "type": "AdaptiveCard",
   "body": [
     {

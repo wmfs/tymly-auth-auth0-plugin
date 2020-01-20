@@ -21,6 +21,22 @@
       "ResourceConfig": {
         "functionName": "getStoredUserRoles"
       },
+      "Next": "GetRoleMemberships"
+    },
+    "GetRoleMemberships": {
+      "Type": "Task",
+      "Resource": "module:finding",
+      "ResourceConfig": {
+        "modelId": "tymly_roleMembership",
+        "filter": {
+          "where": {
+            "memberId": {
+              "equals": "$.userId"
+            }
+          }
+        }
+      },
+      "ResultPath": "$.roleMemberships",
       "Next": "AwaitingHumanInput"
     },
     "AwaitingHumanInput": {
