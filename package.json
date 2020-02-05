@@ -22,7 +22,7 @@
   "dependencies": {
     "boom": "7.3.0",
     "debug": "4.1.1",
-    "request": "2.88.0",
+    "axios": "0.19.2",
     "retry": "0.12.0"
   },
   "devDependencies": {
