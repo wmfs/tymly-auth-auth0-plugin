@@ -1,3 +1,50 @@
+## [1.19.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.19.0...v1.19.1) (2020-04-16)
+
+
+### 🐛 Bug Fixes
+
+* **state-resource:** Removed unnecessary callback parameter from state-resource init methods. ([a26bb43](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a26bb43c82953a6bb989bf1f6b200def4270a5bc))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 5.0.0 to 5.0.1 ([2c7adca](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/2c7adcaad02544891556678f5ff35c4758d01fd4))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/exec from 3.3.8 to 5.0.0 ([f4a2588](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f4a25880f05a790987a861a9fe8d9f1ba200c301))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.119.0 to 1.120.0 ([27da306](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/27da30642ad7868829e92d1788de8b11ea990596))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.120.0 to 1.123.0 ([d4ad0ad](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d4ad0adbbbc45e69c9df0710b547b5c4fa5ac909))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.123.0 to 1.124.0 ([13661cd](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/13661cdc15a99a9488c0f648afb8274c67aa4cba))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.124.0 to 1.125.0 ([9a49a87](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/9a49a87cc918d951e01d27d28a6005c800d0a782))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.125.0 to 1.126.0 ([436ad7b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/436ad7b998aaddc304262fab525f17112fb64bec))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.126.0 to 1.126.1 ([ef66990](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ef6699038fd693963f76777071e7bcded56b7633))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.126.1 to 1.126.2 ([d95a4c4](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d95a4c499d992622408f9e0afae4e6af2dcacdd2))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.126.2 to 1.127.0 ([a0b6e27](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a0b6e279a0c5c9973fed561f1303a8423dfe21ec))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.127.0 to 1.128.0 ([b91fd8b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b91fd8b4f7afa1f6e69e35e772635be7c6b95319))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.128.0 to 1.129.0 ([042dd96](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/042dd968f8d3f7e20d619e0f682c0dd583ac322a))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.129.0 to 1.130.0 ([d7a5c91](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d7a5c919f253d48080a3cf77224c7c5ee8822a01))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.130.0 to 1.131.0 ([d787a32](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d787a32cddabdeb5131cd56a4416edc591fc6e92))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.131.0 to 1.135.0 ([bd86d34](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/bd86d342094ecf553b674642eff72ca65bfa3ecb))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.135.0 to 1.135.1 ([555e603](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/555e6036b0a13e1c4d7e90b16c9667e85c9254de))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([cd52486](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cd52486d80800527fab8fda1a3205070764a44fa))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([71ae198](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/71ae198ff0df84c1e83cc2c688620960c1b20f78))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([88f338e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/88f338e42c16bc999fd54bc47da366896bcde0c8))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([e4752b8](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e4752b874ce8157dc381ad25889364f2a29a57da))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.4.0 to 2.5.0 ([9aa06b2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/9aa06b22ce02224b53dc8060a5428506e825d2c6))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.5.0 to 2.6.0 ([38e29a1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/38e29a1e07986a1392bf0564b4bf722f5be9faac))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.6.0 to 2.7.0 ([bbfd93b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/bbfd93b15ea4f22e5b7f073146e7baf9a094a9fd))
+* **deps-dev:** bump codecov from 3.6.4 to 3.6.5 ([4f92ca6](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4f92ca659e90d92a30986c595d7ede335e9d50fb))
+* **deps-dev:** bump conventional-changelog-metahub from 4.0.0 to 4.0.1 ([29a6e38](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/29a6e3856f1b45fb1c28b93456428e3eebfa8fa0))
+* **deps-dev:** bump mocha from 7.0.1 to 7.1.0 ([4b484d4](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4b484d40f344d0047eafb381b38707e6062c0579))
+* **deps-dev:** bump mocha from 7.1.0 to 7.1.1 ([950a29e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/950a29ef7c739afff267471f37bb296c19fbc59f))
+* **deps-dev:** bump nyc from 15.0.0 to 15.0.1 ([a374658](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a37465852022ee42a5cf80098f31da1fbe0b446f))
+* **deps-dev:** bump standard from 14.3.1 to 14.3.2 ([6771913](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6771913d61d54e6fd77c29904738cea73aac53b7))
+* **deps-dev:** bump standard from 14.3.2 to 14.3.3 ([ba631e8](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ba631e888538cb69afe6e07885eca0e5dc7ca295))
+* **deps-dev:** update semantic-release dev dependencies ([7a613df](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/7a613dfdc804d925de4ee5af4379aae0fa3bf061))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add context env var config to config.yml ([3319ae9](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3319ae9772a132e1937f18bda0e04cea82fbac3c))
+
 # [1.19.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.18.0...v1.19.0) (2020-02-05)
 
 
