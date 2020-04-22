@@ -1,3 +1,28 @@
+## [1.19.2](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.19.1...v1.19.2) (2020-04-22)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** Removed unused debug and retry packages. ([4fba261](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4fba261c69c0d0f225c2451bd5b59a20109a9447))
+* **deps:** Swap out boom from [@hapi](https://github.com/hapi)/boom ([b2b975c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b2b975caa67ab6205b18b5b5f0a68a64fc0d0e91))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.135.1 to 1.135.2 ([07fcf54](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/07fcf54d1cd5537d90ce0d86eecc46e0f7cb6ca4))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.135.2 to 1.136.0 ([86c519c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/86c519c8de48b60b183df581505cd30d4bb295c6))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.136.0 to 1.137.0 ([914a1c7](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/914a1c7ec7ebc43da0adb436303a4750cb0d9d4f))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([6d66ff1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6d66ff1957547744cdc02959d11bbf1f874b3b1d))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([201d917](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/201d9178082fab885961e7c3b9c922466c7b2883))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([fb1f75e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/fb1f75e87e69b500facc649422cd93d07d125631))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin from 1.17.0 to 1.17.1 ([c80eff3](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c80eff301553f99d551da60dbbfff735264e3b51))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin from 1.17.1 to 1.17.2 ([c160667](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c1606679351bd72aea377d83f5a70a3fbb03073b))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.7.0 to 2.7.1 ([ed2d235](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ed2d235d06ee4f5cd951720c79e304075607e3ca))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.7.1 to 2.7.2 ([f5639d9](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f5639d99ab4bf0b975747c32d2e7f8df9f4f14df))
+* **deps-dev:** bump semantic-release from 17.0.4 to 17.0.5 ([72378f1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/72378f1fd76677c627fa5ec64401f2be195bed00))
+* **deps-dev:** bump semantic-release from 17.0.5 to 17.0.6 ([7364ca9](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/7364ca9654bfd2ded10edcaaac68d483eca8f6a7))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([a18379c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a18379cb85911f4c6c3ebe6259dc32496d4dcbe1))
+
 ## [1.19.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.19.0...v1.19.1) (2020-04-16)
 
 
