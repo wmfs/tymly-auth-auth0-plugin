@@ -20,7 +20,7 @@
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "boom": "7.3.0",
+    "@hapi/boom": "9.1.0",
     "debug": "4.1.1",
     "axios": "0.19.2",
     "retry": "0.12.0"
