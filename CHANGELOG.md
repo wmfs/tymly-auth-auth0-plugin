@@ -1,3 +1,23 @@
+## [1.19.3](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.19.2...v1.19.3) (2020-05-05)
+
+
+### 🐛 Bug Fixes
+
+* **services:** Remove redundant boot callback parameter ([82c2012](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/82c201216009c7961b199d700f5237dd9e3c440c))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.137.0 to 1.137.1 ([f2ffc42](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f2ffc4287cdcaa44f39132d0b2fb50c228735946))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.137.1 to 1.137.2 ([4537aed](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4537aedd86ece83535ef65e96a3327997404c5c6))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([357e5e5](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/357e5e54f9034d71706d08a8eef6a73e9cf13b25))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.7.2 to 2.8.0 ([4da3112](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4da31126b35db06577420cb70b63613708b03444))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.0 to 3.2.0 ([18d7a13](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/18d7a13bd08b21cbe97fc8da615c1a031c7d730d))
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([7f0ad2d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/7f0ad2dff05fcde591571fd3d33c3c49f77b9a9c))
+* **deps-dev:** bump moment from 2.24.0 to 2.25.0 ([0d970c2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0d970c2934e292a633bb32779d463d729a4c88cc))
+* **deps-dev:** bump moment from 2.25.0 to 2.25.1 ([0215759](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0215759c8353e59b95c5bc5951c79c70d405bc5d))
+* **deps-dev:** bump moment from 2.25.1 to 2.25.3 ([6556c95](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6556c957eb2bbe683dd067f1da1028146564a04b))
+
 ## [1.19.2](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.19.1...v1.19.2) (2020-04-22)
 
 
