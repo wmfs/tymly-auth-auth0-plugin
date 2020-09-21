@@ -158,6 +158,14 @@
       "input": {
         "userId": "$.userId"
       }
+    },
+    {
+      "type": "Action.PushCard",
+      "title": "View Tymly Executions",
+      "stateMachineName": "system_viewExecutionsFromUser_1_0",
+      "input": {
+        "userId": "$.userId"
+      }
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
