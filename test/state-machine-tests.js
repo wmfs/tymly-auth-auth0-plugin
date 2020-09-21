@@ -21,6 +21,9 @@ describe('Auth0 Groups Mapping State Machine', function () {
           require.resolve('@wmfs/tymly-rbac-plugin'),
           require.resolve('@wmfs/tymly-cardscript-plugin'),
           require.resolve('@wmfs/tymly-solr-plugin')
+        ],
+        blueprintPaths: [
+          require.resolve('@wmfs/systems-blueprint')
         ]
       },
       async (err, services) => {

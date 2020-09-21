@@ -38,7 +38,9 @@ describe('tymly-auth-auth0-plugin tests', function () {
           require.resolve('@wmfs/tymly-cardscript-plugin'),
           require.resolve('@wmfs/tymly-solr-plugin')
         ],
-        blueprintPaths: [],
+        blueprintPaths: [
+          require.resolve('@wmfs/systems-blueprint')
+        ],
         config: {}
       },
       function (err, tymlyServices) {
