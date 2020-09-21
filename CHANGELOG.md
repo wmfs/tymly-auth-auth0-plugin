@@ -1,3 +1,22 @@
+# [1.22.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.21.0...v1.22.0) (2020-09-21)
+
+
+### ✨ Features
+
+* launch executions from user dashboard ([f1c2f3e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f1c2f3e2f6d55616a8c4ae8236e7ab29c8271ea4))
+
+
+### 🛠 Builds
+
+* **deps:** add [@wmfs](https://github.com/wmfs)/systems-blueprint ([6ee9a76](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6ee9a76c5688c50b86810d3a665c401e3f458636))
+
+
+### 🚨 Tests
+
+* add blueprint ([4ef3c47](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4ef3c47c5661971dcce194d64ec76c45b4ae22fe))
+* use mock system-blueprint ([ade4133](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ade4133b8ab352a1fe46b726f5a9d60e1f40a17a))
+* use tymly-test-helpers ([e8b22d6](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e8b22d6dc9f0a6db508f843dbed4e8e341bb0436))
+
 # [1.21.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.20.0...v1.21.0) (2020-09-21)
 
 
