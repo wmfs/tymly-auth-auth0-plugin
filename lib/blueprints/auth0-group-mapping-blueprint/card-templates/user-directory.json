@@ -63,8 +63,9 @@
             "templates": {
               "label": "{{item.name}}",
               "sublabel": [
-                "{{item.user_id}}",
-                "{{item.email || 'No email'}}"
+                "{{ item.user_id }}",
+                "{{ item.email || 'No email' }}",
+                "{{ item.identities.length ? item.identities.map(i => i.connection).join(', ') : '' }}"
               ]
             }
           }
