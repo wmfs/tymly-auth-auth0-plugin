@@ -1,0 +1,10 @@
+{
+  "namespace": "wmfs",
+  "name": "mock",
+  "version": "1.0",
+  "label": "Mock blueprint",
+  "author": "WMFS",
+  "organisation": "West Midlands Fire Service",
+  "description": "Mock blueprint",
+  "tags": []
+}

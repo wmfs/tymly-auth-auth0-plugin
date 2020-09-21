@@ -39,7 +39,7 @@ describe('tymly-auth-auth0-plugin tests', function () {
           require.resolve('@wmfs/tymly-solr-plugin')
         ],
         blueprintPaths: [
-          require.resolve('@wmfs/tymly-test-helpers/blueprints/mock-blueprint')
+          path.resolve(__dirname, './mock-system-blueprint')
         ],
         config: {}
       },

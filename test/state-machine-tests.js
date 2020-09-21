@@ -23,7 +23,7 @@ describe('Auth0 Groups Mapping State Machine', function () {
           require.resolve('@wmfs/tymly-solr-plugin')
         ],
         blueprintPaths: [
-          require.resolve('@wmfs/tymly-test-helpers/blueprints/mock-blueprint')
+          path.resolve(__dirname, './mock-system-blueprint')
         ]
       },
       async (err, services) => {
