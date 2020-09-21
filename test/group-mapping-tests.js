@@ -115,7 +115,7 @@ describe('group mapping tests', function () {
           require.resolve('@wmfs/tymly-solr-plugin')
         ],
         blueprintPaths: [
-          require.resolve('@wmfs/systems-blueprint')
+          require.resolve('@wmfs/tymly-test-helpers/blueprints/mock-blueprint')
         ],
         config: {}
       },
