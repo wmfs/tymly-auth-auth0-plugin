@@ -21,7 +21,7 @@
   "main": "./lib/index.js",
   "dependencies": {
     "@hapi/boom": "9.1.0",
-    "axios": "0.20.0"
+    "axios": "0.21.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "5.0.1",
