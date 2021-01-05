@@ -1,3 +1,11 @@
+# [1.25.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.24.0...v1.25.0) (2021-01-05)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@hapi](https://github.com/hapi)/boom from 9.1.0 to 9.1.1 ([ddcae78](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/ddcae781187fecbd5b0ae8de84c1b3eb2a2833d8))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.17.1 to 2.18.0 ([8120818](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8120818726bd4c2defef63e20f433f09d94b177b))
+
 # [1.24.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.23.1...v1.24.0) (2021-01-05)
 
 
