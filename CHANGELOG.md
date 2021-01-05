@@ -1,3 +1,18 @@
+# [1.24.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.23.1...v1.24.0) (2021-01-05)
+
+
+### 🛠 Builds
+
+* **deps:** bump axios from 0.21.0 to 0.21.1 ([19e984b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/19e984b1db038c31c73ccdbe2a9f3c9c101f069e))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.174.0 to 1.174.1 ([af5e0a9](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/af5e0a99f3a419d295135ddbfe1b65a17c8d7a79))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.174.1 to 1.175.0 ([2713da4](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/2713da4e4fcd3bc265f329ae4b71265a8b3b4c28))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.175.0 to 1.176.0 ([6891d50](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6891d50e51cbd747dc24ea7136f00120c486a924))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.176.0 to 1.176.1 ([5d9ee90](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/5d9ee900ef29124c741a71b6ce540767afcf6f60))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin ([bfe7f28](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/bfe7f2834829e9f5c2771416b502c0c94f572bd1))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.16.0 to 2.17.0 ([c2a8152](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c2a8152bf172698b0d552e44628fc07584c05bed))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-solr-plugin from 2.17.0 to 2.17.1 ([6f7fa40](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6f7fa4066e22992e1f1fbdcd1e4352e318dfc9f8))
+* **deps-dev:** bump semantic-release from 17.3.0 to 17.3.1 ([0a11932](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0a11932a86144e2c0685f8bee1b1bcb6ae422169))
+
 ## [1.23.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.23.0...v1.23.1) (2020-12-01)
 
 
