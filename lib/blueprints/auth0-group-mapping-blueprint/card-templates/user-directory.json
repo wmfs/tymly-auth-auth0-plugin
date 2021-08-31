@@ -16,61 +16,69 @@
   "type": "AdaptiveCard",
   "body": [
     {
-      "type": "Jumbotron",
-      "title": "Auth0 User Directory"
+      "type": "Container",
+      "spacing": "none",
+      "items": [
+        {
+          "id": "query",
+          "type": "Input.Text",
+          "title": "Search user"
+        },
+        {
+          "type": "Container",
+          "spacing": "none",
+          "justifyContent": true,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{ data.totalHits || 0 }} result{{ data.totalHits === 1 ? '' : 's' }}"
+            },
+            {
+              "type": "Action.ApiLookup",
+              "title": "Search",
+              "stateMachineName": "auth0_searchUsers_1_0",
+              "input": {
+                "page": "$.page",
+                "query": "$.query"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "userSearch",
-      "type": "Input.ApiLookup",
-      "showPagination": true,
-      "resultsPerPage": 10,
-      "buttonText": "Search",
-      "endpoint": {
-        "name": "auth0_searchUsers_1_0"
-      },
-      "ctxPaths": {
-        "results": "searchResults.results",
-        "totalHits": "searchResults.totalHits"
-      },
-      "parametersCard": {
-        "type": "AdaptiveCard",
-        "version": "1.0",
-        "body": [
-          {
-            "id": "query",
-            "type": "Input.Text",
-            "spacing": "medium",
-            "icon": "search"
+      "type": "Container",
+      "spacing": "none",
+      "showWhen": "data.results && data.results.length",
+      "items": [
+        {
+          "id": "userResultsList",
+          "type": "List",
+          "showLaunches": true,
+          "clickToLaunch": true,
+          "arrayPath": "data.results",
+          "templates": {
+            "label": "{{ item.name }}",
+            "sublabel": [
+              "{{ item.user_id }}",
+              "{{ item.email || 'No email' }}",
+              "{{ item.identities.length ? item.identities.map(i => i.connection).join(', ') : '' }}"
+            ]
           }
-        ]
-      },
-      "resultsCard": {
-        "type": "AdaptiveCard",
-        "version": "1.0",
-        "body": [
-          {
-            "type": "TextBlock",
-            "text": "{{data.userSearch.summary.totalHits}} result{{data.userSearch.summary.totalHits > 1 ? 's' : ''}} found",
-            "weight": "lighter",
-            "size": "small"
-          },
-          {
-            "id": "userResultsList",
-            "type": "List",
-            "showLaunches": true,
-            "clickToLaunch": true,
-            "arrayPath": "data.userSearch.results",
-            "templates": {
-              "label": "{{item.name}}",
-              "sublabel": [
-                "{{ item.user_id }}",
-                "{{ item.email || 'No email' }}",
-                "{{ item.identities.length ? item.identities.map(i => i.connection).join(', ') : '' }}"
-              ]
+        },
+        {
+          "type": "Pagination",
+          "page": "data.page",
+          "totalPages": "data.totalPages",
+          "endpoint": {
+            "stateMachineName": "auth0_searchUsers_1_0",
+            "input": {
+              "page": "$.page",
+              "query": "$.query"
             }
           }
-        ]
-      }
+        }
+      ]
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

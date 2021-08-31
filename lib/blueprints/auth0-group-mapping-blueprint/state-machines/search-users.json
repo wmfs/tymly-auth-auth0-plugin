@@ -10,10 +10,7 @@
   "States": {
     "Search": {
       "Type": "Task",
-      "Resource": "module:runFunction",
-      "ResourceConfig": {
-        "functionName": "searchUsers"
-      },
+      "Resource": "function:auth0_searchUsers",
       "End": true
     }
   },
