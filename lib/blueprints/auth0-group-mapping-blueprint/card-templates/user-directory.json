@@ -57,11 +57,15 @@
           "showLaunches": true,
           "clickToLaunch": true,
           "arrayPath": "data.results",
+          "avatar": {
+            "type": "image",
+            "sourcePath": "item.picture"
+          },
           "templates": {
             "label": "{{ item.name }}",
             "sublabel": [
               "{{ item.user_id }}",
-              "{{ item.email ? `${item.email} (${item.email_verified ? 'Verified' : 'Not Verified'})` : 'No email' }}",
+              "{{ item.email || 'No email' }}",
               "Last login: {{ formatDate(item.last_login, 'DD MMM YYYY HH:mm') }} ({{ item.logins_count }} logins)",
               "{{ item.identities.length ? item.identities.map(i => i.connection).join(', ') : '' }}"
             ]
