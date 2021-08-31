@@ -1,171 +1,176 @@
 {
   "templateMeta": {
     "name": "user-dashboard",
-    "title": "Auth0 User Dashboard",
+    "title": "${auth0User.name} - Auth0 User",
     "category": "system"
   },
   "type": "AdaptiveCard",
   "body": [
     {
       "type": "Container",
-      "color": "accent",
+      "spacing": "none",
       "items": [
         {
-          "type": "TextBlock",
-          "text": "User Details",
-          "weight": "bolder",
-          "size": "medium"
+          "showWhen": "data.rolesFromCache.length > 0",
+          "type": "Action.PushCard",
+          "title": "Clear cached roles",
+          "stateMachineName": "auth0_clearCachedUserRoles_1_0",
+          "input": {
+            "userId": "$.userId"
+          }
+        },
+        {
+          "type": "Action.PushCard",
+          "title": "View Tymly Executions",
+          "stateMachineName": "system_viewExecutionsFromUser_1_0",
+          "input": {
+            "userId": "$.userId"
+          }
+        },
+        {
+          "id": "userTabs",
+          "type": "TabSet",
+          "spacing": "none",
+          "orientation": "vertical",
+          "alignment": "left",
+          "tabs": [
+            {
+              "type": "Tab",
+              "title": "User details",
+              "items": [
+                {
+                  "type": "ColumnSet",
+                  "spacing": "none",
+                  "columns": [
+                    {
+                      "type": "Column",
+                      "spacing": "none",
+                      "width": 11,
+                      "items": [
+                        {
+                          "type": "FactSet",
+                          "facts": [
+                            {
+                              "title": "Name",
+                              "value": "{{ data.auth0User.name }}"
+                            },
+                            {
+                              "title": "Email",
+                              "value": "{{ data.auth0User.email }}"
+                            },
+                            {
+                              "title": "User ID",
+                              "value": "{{ data.auth0User.user_id }}"
+                            },
+                            {
+                              "title": "Last Login",
+                              "value": "{{ formatDate(data.auth0User.last_login, 'DD MMM YYYY HH:mm') }}"
+                            },
+                            {
+                              "title": "Login Count",
+                              "value": "{{ data.auth0User.logins_count }}"
+                            },
+                            {
+                              "title": "Department",
+                              "value": "{{ data.auth0User.department }}"
+                            },
+                            {
+                              "title": "Description",
+                              "value": "{{ data.auth0User.description }}"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Column",
+                      "spacing": "none",
+                      "width": 1,
+                      "items": [
+                        {
+                          "type": "Image",
+                          "showWhen": "data.auth0User.picture",
+                          "urlBind": "data.auth0User.picture",
+                          "size": "small",
+                          "style": "person"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Tab",
+              "title": "Groups from Auth0",
+              "items": [
+                {
+                  "type": "List",
+                  "arrayPath": "data.auth0User.groups",
+                  "templates": {
+                    "label": "{{item}}"
+                  },
+                  "notFoundText": "No Auth0 groups found."
+                }
+              ]
+            },
+            {
+              "type": "Tab",
+              "title": "Roles from Auth0 groups",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "These roles are calculated by role mappings assigned manually in Tymly."
+                },
+                {
+                  "type": "List",
+                  "arrayPath": "data.rolesFromAuth0",
+                  "templates": {
+                    "label": "{{item}}"
+                  },
+                  "notFoundText": "There are no Tymly roles based on this user's Auth0 groups."
+                }
+              ]
+            },
+            {
+              "type": "Tab",
+              "title": "Role Memberships",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "These roles are entered manually into the Role Membership model for this user."
+                },
+                {
+                  "type": "List",
+                  "arrayPath": "data.roleMemberships",
+                  "templates": {
+                    "label": "{{item.roleId}}"
+                  },
+                  "notFoundText": "There are no role memberships for this user."
+                }
+              ]
+            },
+            {
+              "type": "Tab",
+              "title": "Roles stored in Tymly cache",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "These roles are stored in Tymly cache when the user logs in the first time."
+                },
+                {
+                  "type": "List",
+                  "arrayPath": "data.rolesFromCache",
+                  "templates": {
+                    "label": "{{item}}"
+                  },
+                  "notFoundText": "There are no cached roles for this user."
+                }
+              ]
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "Image",
-      "showWhen": "data.auth0User.picture",
-      "urlBind": "data.auth0User.picture",
-      "size": "medium",
-      "style": "person"
-    },
-    {
-      "type": "FactSet",
-      "facts": [
-        {
-          "title": "Name",
-          "value": "{{ data.auth0User.name }}"
-        },
-        {
-          "title": "Email",
-          "value": "{{ data.auth0User.email }}"
-        },
-        {
-          "title": "User ID",
-          "value": "{{ data.auth0User.user_id }}"
-        },
-        {
-          "title": "Last Login",
-          "value": "{{ formatDate(data.auth0User.last_login, 'DD MMM YYYY HH:mm') }}"
-        },
-        {
-          "title": "Login Count",
-          "value": "{{ data.auth0User.logins_count }}"
-        },
-        {
-          "title": "Department",
-          "value": "{{ data.auth0User.department }}"
-        },
-        {
-          "title": "Description",
-          "value": "{{ data.auth0User.description }}"
-        }
-      ]
-    },
-    {
-      "type": "Container",
-      "color": "accent",
-      "items": [
-        {
-          "type": "TextBlock",
-          "text": "Groups from Auth0",
-          "weight": "bolder",
-          "size": "medium"
-        }
-      ]
-    },
-    {
-      "type": "List",
-      "arrayPath": "data.auth0User.groups",
-      "templates": {
-        "label": "{{item}}"
-      },
-      "notFoundText": "No Auth0 groups found."
-    },
-    {
-      "type": "Container",
-      "color": "accent",
-      "items": [
-        {
-          "type": "TextBlock",
-          "text": "Roles from Auth0 groups",
-          "weight": "bolder",
-          "size": "medium"
-        },
-        {
-          "type": "TextBlock",
-          "text": "These roles are calculated by role mappings assigned manually in Tymly."
-        }
-      ]
-    },
-    {
-      "type": "List",
-      "arrayPath": "data.rolesFromAuth0",
-      "templates": {
-        "label": "{{item}}"
-      },
-      "notFoundText": "There are no Tymly roles based on this user's Auth0 groups."
-    },
-    {
-      "type": "Container",
-      "color": "accent",
-      "items": [
-        {
-          "type": "TextBlock",
-          "text": "Roles Memberships",
-          "weight": "bolder",
-          "size": "medium"
-        },
-        {
-          "type": "TextBlock",
-          "text": "These roles are entered manually into the Role Membership model for this user."
-        }
-      ]
-    },
-    {
-      "type": "List",
-      "arrayPath": "data.roleMemberships",
-      "templates": {
-        "label": "{{item.roleId}}"
-      },
-      "notFoundText": "There are no role memberships for this user."
-    },
-    {
-      "type": "Container",
-      "color": "accent",
-      "items": [
-        {
-          "type": "TextBlock",
-          "text": "Roles stored in Tymly cache",
-          "weight": "bolder",
-          "size": "medium"
-        },
-        {
-          "type": "TextBlock",
-          "text": "These roles are stored in Tymly cache when the user logs in the first time."
-        }
-      ]
-    },
-    {
-      "type": "List",
-      "arrayPath": "data.rolesFromCache",
-      "templates": {
-        "label": "{{item}}"
-      },
-      "notFoundText": "There are no cached roles for this user."
-    },
-    {
-      "showWhen": "data.rolesFromCache.length > 0",
-      "type": "Action.PushCard",
-      "title": "Clear cached roles",
-      "stateMachineName": "auth0_clearCachedUserRoles_1_0",
-      "input": {
-        "userId": "$.userId"
-      }
-    },
-    {
-      "type": "Action.PushCard",
-      "title": "View Tymly Executions",
-      "stateMachineName": "system_viewExecutionsFromUser_1_0",
-      "input": {
-        "userId": "$.userId"
-      }
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
