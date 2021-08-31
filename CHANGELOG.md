@@ -1,3 +1,10 @@
+## [1.27.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.27.0...v1.27.1) (2021-08-31)
+
+
+### 🐛 Bug Fixes
+
+* adjust layout of user view ([88af997](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/88af997685f492aaa8ff707d23da540a8fdd1574))
+
 # [1.27.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.26.2...v1.27.0) (2021-08-31)
 
 
