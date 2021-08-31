@@ -1,3 +1,10 @@
+## [1.26.2](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.26.1...v1.26.2) (2021-08-31)
+
+
+### 🐛 Bug Fixes
+
+* more info for user search ([43473db](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/43473db4f3a60b060eb6ef90682fe99e5c11c3b0))
+
 ## [1.26.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.26.0...v1.26.1) (2021-08-31)
 
 
