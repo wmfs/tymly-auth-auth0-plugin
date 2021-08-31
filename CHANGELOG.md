@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.26.2...v1.27.0) (2021-08-31)
+
+
+### ✨ Features
+
+* display user avatar ([461729a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/461729a1a1997369283931d66614032923b0c2a4))
+
 ## [1.26.2](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.26.1...v1.26.2) (2021-08-31)
 
 
