@@ -61,7 +61,8 @@
             "label": "{{ item.name }}",
             "sublabel": [
               "{{ item.user_id }}",
-              "{{ item.email || 'No email' }}",
+              "{{ item.email ? `${item.email} (${item.email_verified ? 'Verified' : 'Not Verified'})` : 'No email' }}",
+              "Last login: {{ formatDate(item.last_login, 'DD MMM YYYY HH:mm') }} ({{ item.logins_count }} logins)",
               "{{ item.identities.length ? item.identities.map(i => i.connection).join(', ') : '' }}"
             ]
           }
