@@ -1,3 +1,16 @@
+## [1.27.2](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.27.1...v1.27.2) (2021-09-06)
+
+
+### 🐛 Bug Fixes
+
+* use refs for actions on user dashboard ([da6fc2c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/da6fc2c6c3bc98a6a98b980b707e3f466025c932))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v9.0.1 ([7e422b3](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/7e422b3780a48b0d540e2d926cfb844553616159))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.212.3 ([dc652c5](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/dc652c58bbbab92100a714cec28186668eee7117))
+
 ## [1.27.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.27.0...v1.27.1) (2021-08-31)
 
 
