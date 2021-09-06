@@ -11,23 +11,6 @@
       "spacing": "none",
       "items": [
         {
-          "showWhen": "data.rolesFromCache.length > 0",
-          "type": "Action.PushCard",
-          "title": "Clear cached roles",
-          "stateMachineName": "auth0_clearCachedUserRoles_1_0",
-          "input": {
-            "userId": "$.userId"
-          }
-        },
-        {
-          "type": "Action.PushCard",
-          "title": "View Tymly Executions",
-          "stateMachineName": "system_viewExecutionsFromUser_1_0",
-          "input": {
-            "userId": "$.userId"
-          }
-        },
-        {
           "id": "userTabs",
           "type": "TabSet",
           "spacing": "none",
@@ -165,6 +148,16 @@
                     "label": "{{item}}"
                   },
                   "notFoundText": "There are no cached roles for this user."
+                }
+              ]
+            },
+            {
+              "type": "Tab",
+              "title": "Actions",
+              "items": [
+                {
+                  "type": "ActionSet",
+                  "actions": { "$tymlyRef": "auth0UserDashboardActions:*" }
                 }
               ]
             }

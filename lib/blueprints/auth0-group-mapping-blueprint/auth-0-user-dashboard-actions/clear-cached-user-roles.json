@@ -1,0 +1,9 @@
+{
+  "showWhen": "data.rolesFromCache.length > 0",
+  "type": "Action.PushCard",
+  "title": "Clear cached roles",
+  "stateMachineName": "auth0_clearCachedUserRoles_1_0",
+  "input": {
+    "userId": "$.userId"
+  }
+}
