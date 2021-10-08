@@ -30,7 +30,7 @@
     "@wmfs/tymly": "1.217.0",
     "@wmfs/tymly-cardscript-plugin": "1.35.1",
     "@wmfs/tymly-rbac-plugin": "1.18.1",
-    "@wmfs/tymly-solr-plugin": "2.28.0",
+    "@wmfs/tymly-solr-plugin": "2.29.1",
     "chai": "4.3.4",
     "codecov": "3.8.3",
     "conventional-changelog-metahub": "4.0.1",
