@@ -29,7 +29,7 @@
     "@semantic-release/exec": "6.0.2",
     "@wmfs/tymly": "1.218.1",
     "@wmfs/tymly-cardscript-plugin": "1.36.1",
-    "@wmfs/tymly-rbac-plugin": "1.20.0",
+    "@wmfs/tymly-rbac-plugin": "1.20.1",
     "@wmfs/tymly-solr-plugin": "2.29.1",
     "chai": "4.3.4",
     "codecov": "3.8.3",
