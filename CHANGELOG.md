@@ -1,3 +1,28 @@
+# [1.29.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.28.1...v1.29.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/exec to v6.0.3 ([c2ef4eb](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c2ef4eb8e7436bcb92eda46215ffd56e4dfbf732))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.220.0 ([73d2748](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/73d2748fde250c1a6139231ef27b566493c2ec11))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.221.0 ([c9f465d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c9f465dc3e504ee759dfa1fb6ab0f9debb8b4883))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.222.0 ([e261729](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e261729b0107c852abba00a29ccc14dd24c5e256))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.224.2 ([d83d005](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d83d00542f89226f011c2d6a4930a331bb5f408e))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.36.2 ([bef17e2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/bef17e25f12d8ad704e00b333cbe5698b6bb82eb))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.37.0 ([1440259](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/14402593c88da23c99f8294e3473277dc84d4d2b))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin to v1.21.0 ([fbd211a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/fbd211a7544d851b7e60b903b72fe9f3637ecd74))
+* **deps-dev:** update dependency mocha to v9.1.4 ([3499221](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3499221ac8152bacb6f4586d7861d1a56ba583ff))
+* **deps-dev:** update dependency mocha to v9.2.0 ([234acc2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/234acc2f2e19da86485fea84ccedb85c3fa8a6bd))
+* **deps-dev:** update dependency semantic-release to v18.0.1 ([30d18d2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/30d18d23d03bfce7129d9ff2784cc2191b1bac38))
+* **deps-dev:** update dependency semantic-release to v19 ([490ad35](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/490ad35edbb1ea5151edbb364fe0d7711f6283df))
+* **deps-dev:** update tymly, tymly-cardscript-plugin ([28f2f15](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/28f2f15f1a10140beea1605f7c95c1f6a8fc4a31))
+* **deps:** update dependency [@hapi](https://github.com/hapi)/boom to v9.1.4 ([e295abd](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e295abd7c2c1d795c1bca8432157cf65c6f684e2))
+
+
+### 📦 Code Refactoring
+
+* use tymly logger instead of console.log ([f379a6e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f379a6ea37a013cf0fd17da4661c6b6638a063d5))
+
 ## [1.28.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.28.0...v1.28.1) (2021-11-18)
 
 
