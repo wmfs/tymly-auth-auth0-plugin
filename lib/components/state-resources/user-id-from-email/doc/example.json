@@ -1,0 +1,9 @@
+{
+  "UserIdFromEmail": {
+    "Type": "Task",
+    "InputPath": "$.email",
+    "Resource": "module:userIdFromEmail",
+    "ResultPath": "$.userId",
+    "End": true
+  }
+}
