@@ -68,7 +68,7 @@ describe('Auth0 Groups Mapping State Machine', function () {
       it(`map ${auth0} to ${rbac}`, async () => {
         await statebox.startExecution(
           {
-            auth0: auth0,
+            auth0,
             roleId: rbac
           },
           'auth0_addMapping_1_0',
