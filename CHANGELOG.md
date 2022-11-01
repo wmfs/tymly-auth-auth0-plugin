@@ -1,3 +1,24 @@
+# [1.32.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.31.0...v1.32.0) (2022-11-01)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.240.0 ([53d1ad2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/53d1ad260686cff92be45d371b98b6edbea05cac))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.242.0 ([67afeab](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/67afeab1424b625384c20b98c64a2131129bcecb))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.40.0 ([6a7718b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6a7718bb41bfe75916589234d91555c40f0a6aa3))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.42.1 ([941c8e4](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/941c8e401da0398d23fce0ca37b50dc05668ae33))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-solr-plugin to v2.34.0 ([7552bdb](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/7552bdb1591de4bb3acd932333cc6b7d36ed875c))
+* **deps-dev:** update dependency mocha to v10.1.0 ([8f6a758](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8f6a7588a40b5ea5abfee494b97ba954b24f7c8b))
+* **deps-dev:** update dependency moment to v2.29.4 ([677bd78](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/677bd78a1a6208addc67c74f6d99fc56dc7a82ab))
+* **deps-dev:** update dependency semantic-release to v19.0.5 ([fe04067](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/fe04067815db774717e45cd4587ad6a4f6d34117))
+* **deps-dev:** update dependency standard to v17 ([0e2bd19](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0e2bd19b29246d4a498fcf76f7b3c7840ff00f8f))
+* **deps:** update dependency axios to v1 ([8ca346c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8ca346c2f57a0318912fcdccf22f71c18a4c0983))
+
+
+### 💎 Styles
+
+* standard ([8e8b49b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8e8b49bd639cf9f9764ce961d8d0d6252160dbdf))
+
 # [1.31.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.30.0...v1.31.0) (2022-06-21)
 
 
