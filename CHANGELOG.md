@@ -1,3 +1,12 @@
+# [1.33.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.32.0...v1.33.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.43.0 ([343acfe](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/343acfecdccef061543883a0c885bb8d97a2d152))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-solr-plugin to v2.35.0 ([a69d467](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/a69d467a745a270d130633257568d5ad0a81e78a))
+* **deps:** update dependency [@hapi](https://github.com/hapi)/boom to v10 ([8bd0d50](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8bd0d5082faa3f5e6ba0846b71efd9f7dadc265a))
+
 # [1.32.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.31.0...v1.32.0) (2022-11-01)
 
 
