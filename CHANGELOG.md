@@ -1,3 +1,10 @@
+## [1.33.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.33.0...v1.33.1) (2022-11-02)
+
+
+### 🐛 Bug Fixes
+
+* caches function del becomes delete ([cd53408](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cd53408c16a436694a78631269cd2da597e78902))
+
 # [1.33.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.32.0...v1.33.0) (2022-11-02)
 
 
