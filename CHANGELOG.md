@@ -1,3 +1,12 @@
+# [1.36.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.35.0...v1.36.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-solr-plugin to v2.37.0 ([0fddc0d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0fddc0dece5a633a86e1c132edc52c0c9eee2792))
+* **deps-dev:** update dependency semantic-release to v20.1.1 ([c2fc3a0](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/c2fc3a0fc189575ccaa999f781ef962c1b6bd0ad))
+* **deps:** update dependency axios to v1.3.4 ([293596d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/293596d2cf171ea9cb7e2476e31d674d6e1e8ab2))
+
 # [1.35.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.34.0...v1.35.0) (2023-02-17)
 
 
