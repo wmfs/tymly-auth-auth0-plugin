@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.36.0...v1.37.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@hapi](https://github.com/hapi)/boom to v10.0.1 ([37192cb](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/37192cb3a7242afcbf7e9c52107108b6ad383330))
+
 # [1.36.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.35.0...v1.36.0) (2023-03-13)
 
 
