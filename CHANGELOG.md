@@ -1,3 +1,23 @@
+# [1.38.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.37.0...v1.38.0) (2023-06-01)
+
+
+### ✨ Features
+
+* updated schema for cardscript files ([40880ab](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/40880aba13502e048c071f0f190b5a43a87d3144))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.3 ([d72c11a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d72c11aacca0ed43c40669b87be0ac5f096afe32))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.254.0 ([3d5f7f9](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3d5f7f9d93d9490a3bf91efe40b7234722b8779f))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin to v1.25.0 ([13e58ff](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/13e58fff9658537354ca2676610e2b6426b598fb))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-solr-plugin to v2.38.0 ([8d1a045](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8d1a0450dac6564be17b5bd1b7ea139d23040f89))
+* **deps-dev:** update dependency semantic-release to v20.1.3 ([d69f631](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d69f63162d2bec3343143a2b65af42a9d65a7e75))
+* **deps-dev:** update dependency semantic-release to v21 ([95ec0d2](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/95ec0d28dcd4c4bcd7ef2060005947bb4625c9ed))
+* **deps-dev:** update dependency semantic-release to v21.0.1 ([56c0f1e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/56c0f1e2dbe9f1b1ec5b3594770a44eb6fd63004))
+* **deps-dev:** update dependency semantic-release to v21.0.2 ([004480b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/004480b1d1b42176d98637d6821f104d5ec2c4af))
+* **deps-dev:** update dependency standard to v17.1.0 ([688fe1c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/688fe1c23433653f10a62ba8ea8f0fd65a91eae4))
+
 # [1.37.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.36.0...v1.37.0) (2023-03-13)
 
 
