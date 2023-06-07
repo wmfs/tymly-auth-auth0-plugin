@@ -1,3 +1,12 @@
+# [1.39.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.38.0...v1.39.0) (2023-06-07)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin to v1.26.0 ([0b1b1ae](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0b1b1ae1b238ef115cc03651c24a92c533289e06))
+* **deps-dev:** update dependency semantic-release to v21.0.3 ([fb1f64b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/fb1f64bc3fc0483e08874a3fbcec611afe6e25ca))
+* **deps:** update dependency axios to v1.4.0 ([e4f9104](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e4f9104119da4363e649b0bb6117510f833bd983))
+
 # [1.38.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.37.0...v1.38.0) (2023-06-01)
 
 
