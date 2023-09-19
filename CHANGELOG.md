@@ -1,3 +1,25 @@
+# [1.40.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.39.0...v1.40.0) (2023-09-19)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.258.0 ([cf20eae](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/cf20eae0ed8bb0ea0c5a3eb9e2e27606bd2c0864))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.261.0 ([fcd5c1b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/fcd5c1bd91197e156b1a294b1fed81ec10bec03e))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.44.0 ([#697](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/697)) ([0a51d93](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0a51d93faf410ebc21e8496412a6a61f857efe7c))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin to v1.28.0 ([d2f001c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d2f001c58ef67eb6fd2540919bc20851efa73877))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-rbac-plugin to v1.29.0 ([f663073](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f6630738ca06f30b47261586d15df694c3b6ff9d))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-solr-plugin to v2.39.0 ([2391d2f](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/2391d2fe3c69425bee1170256f10206154b26e79))
+* **deps-dev:** update dependency chai to v4.3.8 ([6100107](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/61001079697e355995e12e855e2b4a0f232ab8c8))
+* **deps-dev:** update dependency semantic-release to v21.0.5 ([e863a21](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e863a21e1c101fe341b9c7bb288489e0cc3a013a))
+* **deps-dev:** update dependency semantic-release to v21.0.6 ([92247b5](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/92247b5b21a625e66291bc88af49daed65102ff6))
+* **deps-dev:** update dependency semantic-release to v21.0.7 ([46c2a96](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/46c2a96ba3ccb42c7bfcaa3029319fc9a0fc1f2d))
+* **deps-dev:** update dependency semantic-release to v21.0.9 ([8e98f37](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8e98f37fdee1a9441c21acfac64973a5e43f4228))
+* **deps-dev:** update dependency semantic-release to v21.1.0 ([626dff7](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/626dff77f8f87a6ce2774da40775762496eec487))
+* **deps-dev:** update dependency semantic-release to v21.1.1 ([dbba302](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/dbba302c9d1d4db84686f7ef38cd8c84a7bc0e4c))
+* **deps-dev:** update dependency semantic-release to v21.1.2 ([b8be38a](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b8be38a8e199894d133198048fb0b390baa0a27d))
+* **deps-dev:** update dependency semantic-release to v22 ([0f06ecd](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0f06ecd4ce69816e6cfae5b303a87a01032cf094))
+* **deps:** revert semantic-release ([f63d135](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f63d1354f0619a1947db1f4aa03f09b4b0cd1a2d))
+
 # [1.39.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.38.0...v1.39.0) (2023-06-07)
 
 
