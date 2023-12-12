@@ -11,9 +11,14 @@
       "spacing": "none",
       "items": [
         {
-          "id": "query",
+          "id": "name",
           "type": "Input.Text",
-          "title": "Search user"
+          "title": "Name"
+        },
+        {
+          "id": "connection",
+          "type": "Input.Text",
+          "title": "Connection"
         },
         {
           "type": "Container",
@@ -22,7 +27,8 @@
           "items": [
             {
               "type": "TextBlock",
-              "text": "{{ data.totalHits || 0 }} result{{ data.totalHits === 1 ? '' : 's' }}"
+              "text": "{{ data.totalHits || 0 }} result{{ data.totalHits === 1 ? '' : 's' }}",
+              "spacing": "none"
             },
             {
               "type": "Action.ApiLookup",
@@ -30,7 +36,8 @@
               "stateMachineName": "auth0_searchUsers_1_0",
               "input": {
                 "page": "$.page",
-                "query": "$.query"
+                "name": "$.name",
+                "connection": "$.connection"
               }
             }
           ]
@@ -70,7 +77,8 @@
             "stateMachineName": "auth0_searchUsers_1_0",
             "input": {
               "page": "$.page",
-              "query": "$.query"
+              "name": "$.name",
+              "connection": "$.connection"
             }
           }
         }
