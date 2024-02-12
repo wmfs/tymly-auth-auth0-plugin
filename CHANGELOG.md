@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.40.0...v1.41.0) (2024-02-12)
+
+
+### Bug Fixes
+
+* update release notes generator preset ([bf81151](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/bf8115121b25fe23b2c45a3d5a8a8154ce4472a6))
+
 # [1.40.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.39.0...v1.40.0) (2023-09-19)
 
 
