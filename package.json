@@ -39,7 +39,7 @@
     "mocha": "10.3.0",
     "moment": "2.30.1",
     "nyc": "15.1.0",
-    "semantic-release": "23.0.2",
+    "semantic-release": "23.0.3",
     "standard": "17.1.0"
   },
   "scripts": {
