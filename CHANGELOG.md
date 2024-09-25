@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.41.0...v1.42.0) (2024-09-25)
+
+
+### Features
+
+* **(pin 262) crr dd:** [sc-23400] Keep filters after Task assigned [#752](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/752) ([6185039](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/6185039c329def9e6212f11696f26a26b9f71a64))
+
 # [1.41.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.40.0...v1.41.0) (2024-02-12)
 
 
