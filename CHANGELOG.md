@@ -1,3 +1,14 @@
+## [1.48.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.47.0...v1.48.0) (2025-03-11)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @wmfs/tymly to v1.296.0 ([#803](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/803)) ([8170783](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8170783321dd858dcb295375d532d7275c91b418))
+* **deps-dev:** update dependency @wmfs/tymly to v1.297.0 ([#805](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/805)) ([8b48a05](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8b48a057cb6b5d6dc288268c68c0043540b7cc36))
+* **deps-dev:** update dependency @wmfs/tymly to v1.298.0 ([#807](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/807)) ([95940c6](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/95940c67973d96229a0c7e225994a93760cc3699))
+* **deps-dev:** update dependency @wmfs/tymly-solr-plugin to v2.49.0 ([#804](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/804)) ([e7dee13](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e7dee13e11bafb7804cfa49cb2ec5bc7ed2be365))
+* **deps-dev:** update dependency @wmfs/tymly-solr-plugin to v2.50.0 ([#809](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/809)) ([e07394d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e07394dfe6d3c8d9d996545eabe88929caf227b0))
+* **deps:** update dependency axios to v1.8.2 [security] ([#808](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/808)) ([b0dae21](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/b0dae2139909309082766429e2852139b3bfe0ba))
+
 ## [1.47.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.46.0...v1.47.0) (2025-02-28)
 
 ### Build system dependencies :hammer:
