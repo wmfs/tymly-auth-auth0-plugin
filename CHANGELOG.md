@@ -1,3 +1,9 @@
+## [1.50.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.49.0...v1.50.0) (2025-03-12)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency axios to v1.8.3 ([#812](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/812)) ([2ed333d](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/2ed333dbc2cb730c8b2fe1629234d8afb907f4f8))
+
 ## [1.49.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.48.0...v1.49.0) (2025-03-12)
 
 ### Build system dependencies :hammer:
