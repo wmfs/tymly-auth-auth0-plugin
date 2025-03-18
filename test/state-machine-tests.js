@@ -19,8 +19,7 @@ describe('Auth0 Groups Mapping State Machine', function () {
         pluginPaths: [
           path.resolve(__dirname, '../'),
           require.resolve('@wmfs/tymly-rbac-plugin'),
-          require.resolve('@wmfs/tymly-cardscript-plugin'),
-          require.resolve('@wmfs/tymly-solr-plugin')
+          require.resolve('@wmfs/tymly-cardscript-plugin')
         ],
         blueprintPaths: [
           path.resolve(__dirname, './mock-system-blueprint')
