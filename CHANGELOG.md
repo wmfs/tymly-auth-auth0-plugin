@@ -1,3 +1,17 @@
+## [1.54.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.53.0...v1.54.0) (2025-07-23)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @wmfs/tymly to v1.313.0 ([#840](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/840)) ([3cf1bad](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3cf1bad9a2317d02906e965fd5f4952a541c5e9d))
+* **deps-dev:** update dependency @wmfs/tymly to v1.314.0 ([#842](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/842)) ([acf1eca](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/acf1eca6c525ba669c515dca3e7aa991bf82d3a7))
+* **deps-dev:** update dependency @wmfs/tymly to v1.315.0 ([#844](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/844)) ([5db5e01](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/5db5e01a66147a37d1749be024504197165af818))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v9.1.0 ([#841](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/841)) ([8bdb35f](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/8bdb35f3dd1028789b27dac0530fe1d4a7afd720))
+* **deps-dev:** update dependency mocha to v11.7.0 ([#837](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/837)) ([5310394](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/531039443deb10c428f9017f4e40ccec755325fc))
+* **deps-dev:** update dependency mocha to v11.7.1 ([#838](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/838)) ([4207816](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/420781619a16ba36945adc4497eedebfba595cea))
+* **deps-dev:** update dependency semantic-release to v24.2.6 ([#839](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/839)) ([31e62fa](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/31e62fa15519376cc7ed66d5d1da7d3cc02214ef))
+* **deps-dev:** update dependency semantic-release to v24.2.7 ([#843](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/843)) ([1abd21f](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/1abd21fd52c32f6dfb094215f4bd54e86fc62679))
+* **deps:** update axios from 1.10.0 to 1.11.0 ([4221be1](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/4221be1d1537e6df56b723b1231ff94cf62d20c1))
+
 ## [1.53.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.52.0...v1.53.0) (2025-06-16)
 
 ### Build system dependencies :hammer:
