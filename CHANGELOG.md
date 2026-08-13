@@ -1,3 +1,5 @@
+## [1.55.1](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.55.0...v1.55.1) (2026-08-13)
+
 ## [1.55.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.54.0...v1.55.0) (2026-04-10)
 
 ### Build system dependencies :hammer:
