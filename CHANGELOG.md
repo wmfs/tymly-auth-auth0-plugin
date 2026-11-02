@@ -1,3 +1,10 @@
+## [1.57.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.56.0...v1.57.0) (2026-11-02)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @wmfs/tymly-cardscript-plugin to v1.54.0 ([#903](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/903)) ([d001aca](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/d001acac650987c26fac78c4e21517506d924736))
+* **deps:** update dependency axios to v1.21.0 ([#904](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/904)) ([056087e](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/056087ebb5f78510219adf90f357b0c8c7b9e7b6))
+
 ## [1.56.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.55.1...v1.56.0) (2026-10-30)
 
 ### Build system dependencies :hammer:
