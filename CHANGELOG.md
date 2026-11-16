@@ -1,3 +1,15 @@
+## [1.58.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.57.0...v1.58.0) (2026-11-16)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#905](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/905)) ([024d692](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/024d69260175f1a08d838f84fbe6d3d9eb5dcf59))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#906](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/906)) ([813b44b](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/813b44b07e7bf659ecd7a9cbb4a5301ebfca3c8f))
+* **deps-dev:** update dependency @wmfs/tymly to v1.326.0 ([#907](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/907)) ([e9ea45c](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/e9ea45c8b223e91951fd39db848b61a013195da1))
+* **deps-dev:** update dependency @wmfs/tymly to v1.327.0 ([#908](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/908)) ([0f5cbd0](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/0f5cbd051f1cf874240f470f3a7919496d61d95e))
+* **deps-dev:** update dependency @wmfs/tymly to v1.328.0 ([#909](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/909)) ([f1cb9ad](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/f1cb9ad57ae1bbd5f19b58807021af88bc8b84ad))
+* **deps-dev:** update dependency @wmfs/tymly-cardscript-plugin to v1.58.0 ([#910](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/910)) ([164b2df](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/164b2df635c06569e2bef9593626807caf82e4b7))
+* **deps:** update dependency axios to v1.21.1 ([#911](https://github.com/wmfs/tymly-auth-auth0-plugin/issues/911)) ([3cc06c6](https://github.com/wmfs/tymly-auth-auth0-plugin/commit/3cc06c6bc226dcd2faa5ea09cb17532cc8f9affe))
+
 ## [1.57.0](https://github.com/wmfs/tymly-auth-auth0-plugin/compare/v1.56.0...v1.57.0) (2026-11-02)
 
 ### Build system dependencies :hammer:
